@@ -7,9 +7,17 @@ Bevande:
 - Coca Cola
 - Acqua
 
+Primi piatti:
+- Pasta con le cozze
+- Pasta con i gamberi
+- Pasta con vongole
+- Pasta con pesce spada
+- Pasta con Salmone
+=======
 Dolci:
 Parfait di mandorle
 Tiramisù
 Bigné
 Torta al cioccolato
+
 
