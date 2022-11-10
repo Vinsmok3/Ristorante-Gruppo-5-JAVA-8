@@ -6,3 +6,9 @@ Bevande:
 - Birra
 - Coca Cola
 - Acqua
+
+- pesce spada 
+- insalata di mare
+- frittura di calamari
+- gamberoni 
+
