@@ -6,3 +6,11 @@ Bevande:
 - Birra
 - Coca Cola
 - Acqua
+
+
+Primi piatti:
+- Pasta con le cozze
+- Pasta con i gamberi
+- Pasta con vongole
+- Pasta con pesce spada
+- Pasta con Salmone
