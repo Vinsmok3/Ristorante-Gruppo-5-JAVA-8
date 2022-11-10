@@ -6,3 +6,8 @@ Bevande:
 - Birra
 - Coca Cola
 - Acqua
+
+Dolci:
+Parfait di mandorle
+Tiramisù
+Bigné
