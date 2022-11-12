@@ -25,5 +25,6 @@ Dolci:
  - Tiramisù
  - Bigné
  - Torta al cioccolato
+ - Macedonia
 
 
