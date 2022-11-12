@@ -15,15 +15,15 @@ Primi piatti:
 - Pasta con Salmone
 
 Secondi piatti:
-- pesce spada 
-- insalata di mare
-- frittura di calamari
-- gamberoni 
+- Pesce spada
+- Insalata di mare
+- Frittura di calamari
+- Gamberoni
 
 Dolci:
-Parfait di mandorle
-Tiramisù
-Bigné
-Torta al cioccolato
+ - Parfait di mandorle
+ - Tiramisù
+ - Bigné
+ - Torta al cioccolato
 
 
