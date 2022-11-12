@@ -13,6 +13,7 @@ Primi piatti:
 - Pasta con vongole
 - Pasta con pesce spada
 - Pasta con Salmone
+- Pasta allo scoglio
 
 Secondi piatti:
 - Pesce spada
