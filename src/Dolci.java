@@ -1,4 +1,4 @@
-public class Dolci {
+public class Dolci extends Portata{
 
     public String dolce1;
     public String dolce2;

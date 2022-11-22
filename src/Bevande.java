@@ -1,20 +1,18 @@
-public class Bevande {
-    public String bevanda1;
-    public String bevanda2;
-    public String bevanda3;
+public class Bevande extends Portata {
 
-    public Bevande(String bevanda1, String bevanda2, String bevanda3) {
-        this.bevanda1 = bevanda1;
-        this.bevanda2 = bevanda2;
-        this.bevanda3 = bevanda3;
+    public boolean isAlcolic;
+
+    public Bevande(String type, String name, Integer price) {
+        super(type, name, price);
+    }
+    public Bevande(String type, String name, Integer price, boolean isAlcolic) {
+        super(type, name, price);
     }
 
-    @Override
-    public String toString() {
-        return "Bevande" +
-                "\n" + bevanda1  +
-                "\n" + bevanda2 +
-                "\n" + bevanda3
-                ;
+    public String isDrinkWithAlcool(){
+        if (isAlcolic){
+            return "è alcolico";
+        }
+        return "non è alcolico";
     }
 }
