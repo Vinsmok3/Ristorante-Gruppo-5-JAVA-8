@@ -1,20 +1,23 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Menu{
 
-    //TODO TUTTI SEMPRE PRIVATE
-    public String nomeRistorante;
-    public String tipoMenu;
-    public String nomeMenu;
-    private String completeMenu;
 
-    private List<Portata> portateList = new ArrayList<>();
+    private String nomeRistorante;
+    private String tipoMenu;
+    private String nomeMenu;
+
+    private List<Portata> primiList = new ArrayList<>();
+    private List<Portata> drinksList = new ArrayList<>();
+    private List<Portata> secondiList = new ArrayList<>();
+    private List<Portata> dolciList = new ArrayList<>();
+
     public Menu(String nomeRistorante, String tipoMenu, String nomeMenu) {
         this.nomeRistorante = nomeRistorante;
         this.tipoMenu = tipoMenu;
         this.nomeMenu = nomeMenu;
-        this.completeMenu =  nomeRistorante+ "\n" +"Tipo menu: "  + tipoMenu + "\n" + nomeMenu.toUpperCase();
     }
 
 
@@ -43,14 +46,45 @@ public class Menu{
     }
 
 
-    public void addPortata(Portata portata){
-        portateList.add(portata);
+    public void addPrimi(Portata portata){
+        primiList.add(portata);
     }
-    public void removePortata(Portata portata){
-        portateList.add(portata);
+    public void removePrimi(Portata portata){primiList.remove(portata);
     }
 
+    public void addBevanda(Portata portata){
+        drinksList.add(portata);
+    }
+    public void removeBevanda(Portata portata){
+        drinksList.add(portata);
+    }
+
+    public void addSecondi(Portata portata){
+        secondiList.add(portata);
+    }
+    public void removeSecondi(Portata portata){
+        secondiList.add(portata);
+    }
+
+    public void addDolci(Portata portata){
+        dolciList.add(portata);
+    }
+    public void removeDolci(Portata portata){
+        dolciList.add(portata);
+    }
+
+
     public void printAllMenu(){
-        //stampare per bene il menu
+        System.out.println(nomeRistorante + "\n" + tipoMenu + "\n" +nomeMenu);
+        System.out.println("------PRIMI PIATTI");
+        System.out.println(primiList.toString());
+        System.out.println("------SECONDI PIATTI");
+        System.out.println(secondiList.toString());
+        System.out.println("------BEVANDE");
+        System.out.println(drinksList.toString());
+        System.out.println("------DOLCI");
+        System.out.println(dolciList.toString());
+        //System.out.println(portateList.toString());
+
     }
 }

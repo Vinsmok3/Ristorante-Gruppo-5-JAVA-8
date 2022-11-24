@@ -10,7 +10,6 @@ public class Portata {
             this.type = type;
             this.name = name;
             this.price = price;
-           ;
         }
 
     public String getName() {
@@ -38,6 +37,8 @@ public class Portata {
     }
 
     public void printPortataDetail(){
-            //inserire la stampa dei dettagli portata
+        System.out.println(type);
+        System.out.println(name);
+        System.out.println(price);
     }
 }

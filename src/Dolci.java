@@ -1,14 +1,13 @@
 public class Dolci extends Portata{
 
-    public String dolce1;
-    public String dolce2;
-    public String dolce3;
+    private String dolce1;
+    private String dolce2;
+    private String dolce3;
 
-    public Dolci(String dolce1, String dolce2, String dolce3) {
-        this.dolce1 = dolce1;
-        this.dolce2 = dolce2;
-        this.dolce3 = dolce3;
+    public Dolci(String type, String name, Integer price) {
+        super(type, name, price);
     }
+
 
     @Override
     public String toString() {

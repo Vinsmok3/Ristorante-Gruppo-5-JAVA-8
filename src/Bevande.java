@@ -9,10 +9,16 @@ public class Bevande extends Portata {
         super(type, name, price);
     }
 
+    @Override
+    public String toString(){
+        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + isDrinkWithAlcool();
+    }
+
     public String isDrinkWithAlcool(){
         if (isAlcolic){
             return "è alcolico";
-        }
+        }else
         return "non è alcolico";
     }
+
 }
