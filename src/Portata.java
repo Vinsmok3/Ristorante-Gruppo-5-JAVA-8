@@ -41,5 +41,4 @@ public class Portata {
         System.out.println(name);
         System.out.println(price);
     }
-
 }
