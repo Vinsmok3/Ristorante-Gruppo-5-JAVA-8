@@ -14,13 +14,6 @@ public class Start {
         menu.addPrimi(primo1);
         menu.addPrimi(primo2);
         menu.addPrimi(primo3);
-
-
-
-
-
-
-
         menu.addBevanda(bevanda1);
         menu.addBevanda(bevanda2);
         menu.printAllMenu();
