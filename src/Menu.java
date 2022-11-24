@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Menu{
@@ -75,7 +74,7 @@ public class Menu{
 
 
     public void printAllMenu(){
-        System.out.println(nomeRistorante + "\n" + tipoMenu + "\n" +nomeMenu);
+        System.out.println("RISTORANTE:" + "\s" + nomeRistorante + "\n" + "MENU' DI: " + "\s" +tipoMenu + "\n" + "NOME DEL MENU': " + "\s" +nomeMenu);
         System.out.println("------PRIMI PIATTI");
         System.out.println(primiList.toString());
         System.out.println("------SECONDI PIATTI");
