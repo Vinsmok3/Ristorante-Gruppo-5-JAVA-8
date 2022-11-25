@@ -13,7 +13,7 @@ public class SecondiPiatti extends Portata {
 
     @Override
     public String toString() {
-        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasfresh();
+        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasfresh() + "\n";
     }
 
     public String hasfresh() {

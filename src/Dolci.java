@@ -1,6 +1,6 @@
 public class Dolci extends Portata {
 
-    public boolean isHomeMade;
+    private boolean isHomeMade;
 
     public Dolci(String type, String name, Integer price) {
         super(type, name, price);
@@ -13,7 +13,7 @@ public class Dolci extends Portata {
 
     @Override
     public String toString() {
-        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + isSweetHomeMade();
+        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + isSweetHomeMade() + "\n";
     }
 
     public String isSweetHomeMade() {

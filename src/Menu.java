@@ -76,14 +76,14 @@ public class Menu{
     public void printAllMenu(){
         System.out.println("RISTORANTE:" + "\s" + nomeRistorante + "\n" + "MENU' DI: " + "\s" +tipoMenu + "\n" + "NOME DEL MENU': " + "\s" +nomeMenu);
         System.out.println("------PRIMI PIATTI");
-        System.out.println(primiList.toString());
+        System.out.println(primiList.toString().replace("[", "").replace("]", "").replace(", ",""));
         System.out.println("------SECONDI PIATTI");
-        System.out.println(secondiList.toString());
+        System.out.println(secondiList.toString().replace("[", "").replace("]", "").replace(", ",""));
         System.out.println("------BEVANDE");
-        System.out.println(drinksList.toString());
+        System.out.println(drinksList.toString().replace("[", "").replace("]", "").replace(", ",""));
         System.out.println("------DOLCI");
-        System.out.println(dolciList.toString());
-        //System.out.println(portateList.toString());
+        System.out.println(dolciList.toString().replace("[", "").replace("]", "").replace(", ",""));
+
 
     }
 }

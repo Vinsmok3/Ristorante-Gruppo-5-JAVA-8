@@ -1,5 +1,5 @@
 
-public class Cliente extends ListaClienti {
+public class Cliente extends ListaClientieTavoli {
 
     private String name;
     private String surname;

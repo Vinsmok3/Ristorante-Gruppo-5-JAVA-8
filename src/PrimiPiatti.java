@@ -13,8 +13,10 @@ public class PrimiPiatti extends Portata{
 
     @Override
     public String toString(){
-        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasGlutenFree();
+        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasGlutenFree() + "\n";
+        //return String.format("Tipo %s Nome %s Prezzo %d hasGlutenfree %b ", getType(),getName(),getPrice(),hasGlutenFree());
     }
+
     public String hasGlutenFree(){
         if (glutenFree){
             return "Contiene il glutine";
