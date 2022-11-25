@@ -1,23 +1,28 @@
-public class SecondiPiatti {
+public class SecondiPiatti extends Portata {
 
+    private boolean hasfresh;
 
-    public String primaportata ;
-    public String secondaportata;
-    public String terzaportata;
+    public SecondiPiatti(String type, String name, Integer price) {
+        super(type, name, price);
+    }
 
-    public SecondiPiatti(String primaportata, String secondaportata, String terzaportata) {
-        this.primaportata = primaportata;
-        this.secondaportata = secondaportata;
-        this.terzaportata = terzaportata;
-
+    public SecondiPiatti(String type, String name, Integer price, boolean hasfresh) {
+        super(type, name, price);
+        this.hasfresh = hasfresh;
     }
 
     @Override
     public String toString() {
-        return "Secondi Piatti" +
-                 "\n" + primaportata +
-                 "\n" +  secondaportata +
-                "\n" + terzaportata
-                ;
+        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasfresh();
+    }
+
+    public String hasfresh() {
+        if (hasfresh) {
+            return "il pesce è fresco";
+        } else {
+            return "il pesce non è fresco";
+        }
+
+
     }
 }

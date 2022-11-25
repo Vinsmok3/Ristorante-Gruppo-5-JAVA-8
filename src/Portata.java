@@ -4,7 +4,7 @@ public class Portata {
 
         private String name;
 
-        private double price;
+        double price;
 
         public Portata(String type, String name,Integer price){
             this.type = type;

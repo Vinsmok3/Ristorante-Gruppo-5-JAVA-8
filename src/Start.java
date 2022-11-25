@@ -12,6 +12,8 @@ public class Start {
         Portata primo3 = new PrimiPiatti("Farfalle", "Farfalle con il salmone",18,false);
         Portata dolce1 = new Dolci("Semi-freddo", "Parfait di mandorle", 10, true);
         Portata dolce2 = new Dolci("A freddo", "Tiramisù", 22, true);
+        Portata secondi1 = new SecondiPiatti("a fette", "pesce spada", 25, true  );
+        Portata secondi2 = new SecondiPiatti("frittura", "mix di calamari e gamberi",10,false);
 
         Cliente cliente1 = new Cliente("Paul","Cannon",333333338, true);
         menu.addPrimi(primo1);
@@ -21,6 +23,8 @@ public class Start {
         menu.addDolci(dolce2);
         menu.addBevanda(bevanda1);
         menu.addBevanda(bevanda2);
+        menu.addSecondi(secondi1);
+        menu.addSecondi(secondi2);
         menu.printAllMenu();
 
         listClienti.addClient(cliente1);
