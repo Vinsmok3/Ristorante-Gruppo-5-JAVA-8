@@ -8,10 +8,9 @@ public class Menu{
     private String tipoMenu;
     private String nomeMenu;
 
+    //TODO non c'è bisogno di fare una lista per ogni tipo basta una lista di portate e basta!
     private List<Portata> primiList = new ArrayList<>();
-    private List<Portata> drinksList = new ArrayList<>();
-    private List<Portata> secondiList = new ArrayList<>();
-    private List<Portata> dolciList = new ArrayList<>();
+
 
     public Menu(String nomeRistorante, String tipoMenu, String nomeMenu) {
         this.nomeRistorante = nomeRistorante;
@@ -45,6 +44,7 @@ public class Menu{
     }
 
 
+    //TODO fare solo un metodo addPortata
     public void addPrimi(Portata portata){
         primiList.add(portata);
     }
