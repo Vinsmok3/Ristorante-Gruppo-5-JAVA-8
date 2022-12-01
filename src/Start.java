@@ -1,9 +1,9 @@
 
-
 public class Start {
     public static void main(String[] args) {
         Menu menu = new Menu("Ammutta Muddica","Pesce", "4 Uomini e un pesce");
         ListaClientieTavoli listaClientieTavoli = new ListaClientieTavoli();
+
 
         Portata bevanda1 = new Bevande("Vino", "Tavernello",20, true);
         Portata bevanda2 = new Bevande("Acqua", "Levissima", 10,false);
@@ -16,25 +16,27 @@ public class Start {
         Portata dolce2 = new Dolci("A freddo", "Tiramisù", 22, true);
 
 
-        Cliente cliente1 = new Cliente("Paul","Cannon",333333338, true);
+        Cliente cliente1 = new Cliente("Paul","Cannon",333333338, true); // il phonenumber dopo 9 numeri da errore.
 
         Tavoli tavoli1 = new Tavoli(1,1,true);
 
-        menu.addPrimi(primo1);
-        menu.addPrimi(primo2);
-        menu.addPrimi(primo3);
-        menu.addDolci(dolce1);
-        menu.addDolci(dolce2);
-        menu.addBevanda(bevanda1);
-        menu.addBevanda(bevanda2);
-        menu.addSecondi(secondi1);
-        menu.addSecondi(secondi2);
+        menu.addPortata(primo1);
+        menu.addPortata(primo2);
+        menu.addPortata(primo3);
+        menu.addPortata(dolce1);
+        menu.addPortata(dolce2);
+        menu.addPortata(bevanda1);
+        menu.addPortata(bevanda2);
+        menu.addPortata(secondi1);
+        menu.addPortata(secondi2);
         menu.printAllMenu();
-        System.out.println("----------LISTA CLIENTI----------");
+        bevanda1.printPortataDetail();
+        /*System.out.println("----------LISTA CLIENTI----------");
         listaClientieTavoli.addClient(cliente1);
         listaClientieTavoli.printAllClients();
         System.out.println("----------LISTA TAVOLI-----------");
         listaClientieTavoli.addTavoli(tavoli1);
-        listaClientieTavoli.printAllTavoli();
+        listaClientieTavoli.printAllTavoli();*/
+
     }
 }

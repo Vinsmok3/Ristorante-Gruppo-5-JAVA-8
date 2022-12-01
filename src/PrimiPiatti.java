@@ -7,10 +7,10 @@ public class PrimiPiatti extends Portata{
     }
 
     //TODO se il field è booelan va passato al boolean di solito lo stardard è lo stesso nome
-    public PrimiPiatti(String type, String name, Integer price, Boolean hasGluten) {
+    public PrimiPiatti(String type, String name, Integer price, Boolean glutenFree) {
         super(type, name, price);
         //TODO non si fa così sistemare con il this
-        glutenFree = hasGluten;
+        this.glutenFree = glutenFree;
 
     }
 

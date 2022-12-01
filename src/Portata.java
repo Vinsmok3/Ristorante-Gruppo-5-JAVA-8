@@ -38,8 +38,6 @@ public class Portata {
 
     //TODO come faccioa a capire a video chi è type name e price? magari su la stessa riga
     public void printPortataDetail() {
-        System.out.println(type);
-        System.out.println(name);
-        System.out.println(price);
+        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price);
     }
 }
