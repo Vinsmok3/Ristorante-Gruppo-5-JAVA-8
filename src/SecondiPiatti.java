@@ -11,10 +11,10 @@ public class SecondiPiatti extends Portata {
         this.hasfresh = hasfresh;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasfresh() + "\n";
-    }
+    }*/
 
     public String hasfresh() {
         if (hasfresh) {

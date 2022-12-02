@@ -21,12 +21,12 @@ public class Bevande extends Portata {
     //TODO se è is allora torna un boolean, questo metodo torna una stringa e quindi si chiamerà getIsDrinkecc...
     //siamo sicuri che deve tornare una stringa come lo usiamo questo metodo? forse volevamo stampare il tipo di drink?
 
-    /*public String isDrinkWithAlcool(){
+    public String isDrinkWithAlcool(){
         if (isAlcolic){
             return "è alcolico";
         }else
         return "non è alcolico";
-    }*/
+    }
 
     @Override
     public void printPortataDetail() {

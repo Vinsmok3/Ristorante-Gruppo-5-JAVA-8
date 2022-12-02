@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu{
+public class Menu {
 
 
     private String nomeRistorante;
@@ -47,6 +47,7 @@ public class Menu{
     public void addPortata(Portata portata) {
         listaPortata.add(portata);
     }
+
     public void removePortata(Portata portata) {
         listaPortata.remove(portata);
     }
@@ -54,11 +55,11 @@ public class Menu{
 
     public void printAllMenu() {
         System.out.println("RISTORANTE:" + "\s" + nomeRistorante + "\n" + "MENU' DI: " + "\s" + tipoMenu + "\n" + "NOME DEL MENU': " + "\s" + nomeMenu);
-        System.out.println(listaPortata.toString().replace("[", "").replace("]", "").replace(", ", ""));
-        //System.out.println(listaPortata);
-        System.out.println(listaPortata);
+        //System.out.println(listaPortata.toString().replace("[", "").replace("]", "").replace(", ", ""));
+        for (int i = 0; i < listaPortata.size(); i++) {
+            listaPortata.get(i).printPortataDetail();
 
+        }
     }
 }
-
 

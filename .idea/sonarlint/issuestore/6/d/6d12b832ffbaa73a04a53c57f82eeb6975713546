@@ -1,0 +1,16 @@
+
+0
+java:S1220""Move this file to a named package.
+V
+java:S1854";Remove this useless assignment to local variable "tavoli1".(˜œºşÿÿÿÿ
+W
+java:S1854"<Remove this useless assignment to local variable "cliente1".(Ë¬îâùÿÿÿÿ
+b
+java:S1854"GRemove this useless assignment to local variable "listaClientieTavoli".(âÔû“ıÿÿÿÿ
+S
+java:S1481"8Remove this unused "listaClientieTavoli" local variable.(âÔû“ıÿÿÿÿ
+H
+java:S1481"-Remove this unused "cliente1" local variable.(Ë¬îâùÿÿÿÿ
+G
+java:S1481",Remove this unused "tavoli1" local variable.(˜œºşÿÿÿÿ
+Q	java:S125""<This block of commented-out lines of code should be removed.(õ³Ó

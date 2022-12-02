@@ -11,10 +11,10 @@ public class Dolci extends Portata {
         this.isHomeMade = isHomeMade;
     }
 //TODO
-    @Override
+    /*@Override
     public String toString() {
         return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + isSweetHomeMade() + "\n";
-    }
+    }*/
 
     //TODO
     public String isSweetHomeMade() {
