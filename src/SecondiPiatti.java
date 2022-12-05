@@ -1,26 +1,26 @@
 public class SecondiPiatti extends Portata {
 
-    private boolean hasfresh;
+    private boolean isFresh;
 
     public SecondiPiatti(String type, String name, Integer price) {
         super(type, name, price);
     }
 
-    public SecondiPiatti(String type, String name, Integer price, boolean hasfresh) {
+    public SecondiPiatti(String type, String name, Integer price, boolean isFresh) {
         super(type, name, price);
-        this.hasfresh = hasfresh;
+        this.isFresh = isFresh;
     }
 
-    /*@Override
-    public String toString() {
-        return "Tipo: " + getType() + " - " + "Nome: " + getName() + " - " + "Prezzo: " + getPrice() + " - " + hasfresh() + "\n";
-    }*/
+    @Override
+    public void printPortataDetail() {
+        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + getFishInfo());
+    }
 
-    public String hasfresh() {
-        if (hasfresh) {
-            return "il pesce è fresco";
+    public String getFishInfo() {
+        if (isFresh) {
+            return " - Pescato del giorno.";
         } else {
-            return "il pesce non è fresco";
+            return "";
         }
 
 

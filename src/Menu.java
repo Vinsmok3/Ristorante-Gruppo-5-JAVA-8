@@ -4,12 +4,11 @@ import java.util.List;
 public class Menu {
 
 
+    //TODO non c'è bisogno di fare una lista per ogni tipo basta una lista di portate e basta!
+    private final List<Portata> listaPortata = new ArrayList<>();
     private String nomeRistorante;
     private String tipoMenu;
     private String nomeMenu;
-
-    //TODO non c'è bisogno di fare una lista per ogni tipo basta una lista di portate e basta!
-    private List<Portata> listaPortata = new ArrayList<>();
 
 
     public Menu(String nomeRistorante, String tipoMenu, String nomeMenu) {
@@ -55,9 +54,8 @@ public class Menu {
 
     public void printAllMenu() {
         System.out.println("RISTORANTE:" + "\s" + nomeRistorante + "\n" + "MENU' DI: " + "\s" + tipoMenu + "\n" + "NOME DEL MENU': " + "\s" + nomeMenu);
-        //System.out.println(listaPortata.toString().replace("[", "").replace("]", "").replace(", ", ""));
-        for (int i = 0; i < listaPortata.size(); i++) {
-            listaPortata.get(i).printPortataDetail();
+        for (Portata portata : listaPortata) {
+            portata.printPortataDetail();
 
         }
     }

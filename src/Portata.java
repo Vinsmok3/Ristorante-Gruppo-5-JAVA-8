@@ -1,5 +1,4 @@
 public class Portata {
-    //TODO cleaning code l'ho fatto io, vedere come si fa da intellj
     private String type;
 
     private String name;
@@ -36,7 +35,6 @@ public class Portata {
         this.type = type;
     }
 
-    //TODO come faccioa a capire a video chi è type name e price? magari su la stessa riga
     public void printPortataDetail() {
         System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price);
     }

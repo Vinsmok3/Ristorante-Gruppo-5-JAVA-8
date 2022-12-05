@@ -1,46 +1,22 @@
-public class Tavoli extends ListaClientieTavoli{
-    private int number;
-    private int chairs;
-    private boolean isOutside;
+public class Tavoli extends ListaTavoli {
+    private final boolean isOutside;
 
     public Tavoli(int number, int chairs, boolean isOutside) {
-        this.number = number;
-        this.chairs = chairs;
+        super(number, chairs);
         this.isOutside = isOutside;
     }
-    public String isOutside(){
-        if(isOutside){
-            return "il tavolo è all'aperto";
-        }else
-            return "il tavolo è al coperto";
+
+
+    public String isOutside() {
+        if (isOutside) {
+            return "Il tavolo è all'aperto";
+        } else
+            return "Il tavolo è al coperto";
 
     }
 
     @Override
-    public String toString() {
-        return
-                "NUMERO: " + number + "\s" + " - " +
-                "SEDIE: " + chairs + "\s" + " - " +
-                "E' FUORI?: " + isOutside();
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getChairs() {
-        return chairs;
-    }
-
-    public void setChairs(int chairs) {
-        this.chairs = chairs;
-    }
-
-    public void setOutside(boolean outside) {
-        isOutside = outside;
+    public void printAllTables() {
+        System.out.println("Numero Tavolo: " + getNumber() + " - " + "Numero sedie: " + getChairs() + " - " + isOutside());
     }
 }

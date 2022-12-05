@@ -20,8 +20,7 @@ public class Dolci extends Portata {
     public String isSweetHomeMade() {
         if (isHomeMade) {
             return "è fatto in casa";
-        } else
-            return "non è fatto in casa";
+        } else return "non è fatto in casa";
     }
 
 }

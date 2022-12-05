@@ -1,5 +1,4 @@
-
-public class PrimiPiatti extends Portata{
+public class PrimiPiatti extends Portata {
     private boolean glutenFree;
 
     public PrimiPiatti(String type, String name, Integer price) {
@@ -20,10 +19,10 @@ public class PrimiPiatti extends Portata{
         //return String.format("Tipo %s Nome %s Prezzo %d hasGlutenfree %b ", getType(),getName(),getPrice(),hasGlutenFree());
     }*/
 
-    public String hasGlutenFree(){
-        if (glutenFree){
+    public String hasGlutenFree() {
+        if (glutenFree) {
             return "Contiene il glutine";
-        }else {
+        } else {
             return "Senza glutine";
         }
     }
