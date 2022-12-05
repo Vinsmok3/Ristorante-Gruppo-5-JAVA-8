@@ -10,8 +10,8 @@ public class Start {
         Portata primo3 = new PrimiPiatti("Farfalle", "Farfalle con il salmone", 18, false);
         Portata secondi1 = new SecondiPiatti("SECONDI: ", "Pesce Spada", 25, true);
         Portata secondi2 = new SecondiPiatti("SECONDI: ", "Frittura di calamari e gamberi", 10, false);
-        Portata dolce1 = new Dolci("Semi-freddo", "Parfait di mandorle", 10, true);
-        Portata dolce2 = new Dolci("A freddo", "Tiramisù", 22, true);
+        Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true);
+        Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false);
 
         Cliente cliente1 = new Cliente("Paul", "Cannon", 333333338, true); // il phonenumber dopo 9 numeri da errore.
 
