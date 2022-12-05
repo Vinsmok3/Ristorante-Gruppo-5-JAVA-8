@@ -5,9 +5,9 @@ public class Start {
 
         Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, 9);
         Portata bevanda2 = new Bevande("BEVANDA: ", "Acqua", 10);
-        Portata primo1 = new PrimiPiatti("Spaghetti", "Pasta con le cozze", 23, true);
-        Portata primo2 = new PrimiPiatti("Penne", "Pasta con le vongole", 25, true);
-        Portata primo3 = new PrimiPiatti("Farfalle", "Farfalle con il salmone", 18, false);
+        Portata primo1 = new PrimiPiatti("PRIMI: ", "Pasta con le cozze", 23, true);
+        Portata primo2 = new PrimiPiatti("PRIMI: ", "Pasta con le vongole", 25, true);
+        Portata primo3 = new PrimiPiatti("PRIMI: ", "Farfalle con il salmone", 18, false);
         Portata secondi1 = new SecondiPiatti("SECONDI: ", "Pesce Spada", 25, true);
         Portata secondi2 = new SecondiPiatti("SECONDI: ", "Frittura di calamari e gamberi", 10, false);
         Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true);
