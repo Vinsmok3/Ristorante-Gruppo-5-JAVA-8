@@ -13,7 +13,7 @@ public class Start {
         Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true);
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false);
 
-        Cliente cliente1 = new Cliente("Paul", "Cannon", 333333338, true); // il phonenumber dopo 9 numeri da errore.
+        Cliente cliente1 = new Cliente("Paul", "Cannon", 333333338); // il phonenumber dopo 9 numeri da errore.
 
         Tavoli tavoli1 = new Tavoli(1, 2, true);
 

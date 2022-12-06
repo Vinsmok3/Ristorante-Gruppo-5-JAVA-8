@@ -27,8 +27,8 @@ public class Ristorante extends Menu{
     }
 
     public void printAllClients() {
-        for (ListaClienti listaClienti : clientList) {
-            listaClienti.printAllClients();
+        for (Cliente cliente : clientList) {
+            cliente.printAllClients();
         }
     }
 

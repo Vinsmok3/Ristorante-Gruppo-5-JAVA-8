@@ -1,4 +1,5 @@
 public class Tavoli extends ListaTavoli {
+    //TODO riflettere sul final!
     private final boolean isOutside;
 
     public Tavoli(int number, int chairs, boolean isOutside) {
@@ -7,6 +8,7 @@ public class Tavoli extends ListaTavoli {
     }
 
 
+    //TODO va fatto con il booleano
     public String isOutside() {
         if (isOutside) {
             return "Il tavolo è all'aperto";

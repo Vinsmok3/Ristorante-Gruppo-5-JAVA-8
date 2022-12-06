@@ -4,9 +4,11 @@ import java.util.List;
 public class Menu {
 
 
-    //TODO non c'è bisogno di fare una lista per ogni tipo basta una lista di portate e basta!
+    //TODO occhio ai final
     private final List<Portata> listaPortata = new ArrayList<>();
     private String nomeRistorante;
+
+    //TODO questo devo essere un enumerato
     private String tipoMenu;
     private String nomeMenu;
 
