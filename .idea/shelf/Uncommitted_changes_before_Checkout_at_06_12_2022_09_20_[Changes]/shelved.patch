@@ -1,0 +1,61 @@
+Index: src/PrimiPiatti.java
+===================================================================
+diff --git a/src/PrimiPiatti.java b/src/PrimiPiatti.java
+--- a/src/PrimiPiatti.java	
++++ b/src/PrimiPiatti.java	
+@@ -5,12 +5,11 @@
+         super(type, name, price);
+     }
+ 
+-    //TODO se il field è booelan va passato al boolean di solito lo stardard è lo stesso nome
+     public PrimiPiatti(String type, String name, Integer price, boolean glutenFree) {
+         super(type, name, price);
+-        //TODO non si fa così sistemare con il this
+         this.glutenFree = glutenFree;
+     }
++
+     public String isGlutenFree() {
+         if (glutenFree) {
+             return "- Contiene il glutine";
+@@ -18,6 +17,7 @@
+             return "- Senza glutine";
+         }
+     }
++
+     @Override
+     public void printPortataDetail() {
+         System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + isGlutenFree());
+Index: src/Menu.java
+===================================================================
+diff --git a/src/Menu.java b/src/Menu.java
+--- a/src/Menu.java	
++++ b/src/Menu.java	
+@@ -4,7 +4,6 @@
+ public class Menu {
+ 
+ 
+-    //TODO non c'è bisogno di fare una lista per ogni tipo basta una lista di portate e basta!
+     private final List<Portata> listaPortata = new ArrayList<>();
+     private String nomeRistorante;
+     private String tipoMenu;
+@@ -42,7 +41,6 @@
+     }
+ 
+ 
+-    //TODO fare solo un metodo addPortata
+     public void addPortata(Portata portata) {
+         listaPortata.add(portata);
+     }
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	
++++ b/.idea/vcs.xml	
+@@ -2,6 +2,5 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$/TeamProject" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file

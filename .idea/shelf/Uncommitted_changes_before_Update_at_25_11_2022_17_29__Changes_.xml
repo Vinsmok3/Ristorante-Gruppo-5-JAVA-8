@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]" date="1669393743190" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 25/11/2022 17:29 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Menu.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Menu.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Menu.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/index.pb" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/index.pb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/index.pb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Portata.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Portata.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Portata.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Start.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/ListaClienti.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/ListaClienti.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/ListaClienti.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Dolci.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Dolci.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Dolci.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Bevande.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Bevande.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Bevande.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Cliente.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/Cliente.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/Cliente.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/PrimiPiatti.class" />
+    <option name="AFTER_PATH" value="out/production/Ristorante-Gruppo-5-JAVA-8/PrimiPiatti.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29_[Changes]/PrimiPiatti.class" />
+  </binary>
+</changelist>

@@ -1,0 +1,38 @@
+Index: src/Start.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\npublic class Start {\r\n    public static void main(String[] args) {\r\n        Menu menu = new Menu(\"Ammutta Muddica\",\"Pesce\", \"4 Uomini e un pesce\");\r\n        ListaClienti listClienti = new ListaClienti();\r\n\r\n        Portata bevanda1 = new Bevande(\"Vino\", \"Tavernello\",20, true);\r\n        Portata bevanda2 = new Bevande(\"Acqua\", \"Levissima\", 10,false);\r\n        Portata primo1 = new PrimiPiatti(\"Spaghetti\", \"Pasta con le cozze\", 23,true);\r\n        Portata primo2 = new PrimiPiatti(\"Penne\",\"Pasta con le vongole\",25,true);\r\n        Portata primo3 = new PrimiPiatti(\"Farfalle\", \"Farfalle con il salmone\",18,false);\r\n        Portata dolce1 = new Dolci(\"Semi-freddo\", \"Parfait di mandorle\", 10, true);\r\n        Portata dolce2 = new Dolci(\"A freddo\", \"Tiramisù\", 22, true);\r\n\r\n        Cliente cliente1 = new Cliente(\"Paul\",\"Cannon\",333333338, true);\r\n        menu.addPrimi(primo1);\r\n        menu.addPrimi(primo2);\r\n        menu.addPrimi(primo3);\r\n        menu.addDolci(dolce1);\r\n        menu.addDolci(dolce2);\r\n        menu.addBevanda(bevanda1);\r\n        menu.addBevanda(bevanda2);\r\n        menu.printAllMenu();\r\n\r\n        listClienti.addClient(cliente1);\r\n        listClienti.printAllClients();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Start.java b/src/Start.java
+--- a/src/Start.java	(revision 787886061c7a1af9fb83a1919a87fdf7e0eb2804)
++++ b/src/Start.java	(date 1669391514867)
+@@ -22,7 +22,7 @@
+         menu.addBevanda(bevanda1);
+         menu.addBevanda(bevanda2);
+         menu.printAllMenu();
+-
++        System.out.println("-------------Lista Clienti------------------");
+         listClienti.addClient(cliente1);
+         listClienti.printAllClients();
+     }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_19\" default=\"true\" project-jdk-name=\"19\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 787886061c7a1af9fb83a1919a87fdf7e0eb2804)
++++ b/.idea/misc.xml	(date 1669311538642)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file

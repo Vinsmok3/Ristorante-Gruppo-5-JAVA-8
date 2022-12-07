@@ -5,7 +5,7 @@ import TableRestaurant.Tavoli;
 
 public class Start {
     public static void main(String[] args) {
-        Menu menu = new Menu("Ammutta Muddica", "Pesce", "4 Uomini e un pesce");
+        Menu menu = new Menu();
         Ristorante ristorante = new Ristorante("Ammutta Muddica", "Pesce", "4 Uomini e un pesce");
 
         Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, 9);
@@ -18,7 +18,7 @@ public class Start {
         Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true);
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false);
 
-        Cliente cliente1 = new Cliente("Paul", "Cannon", 333333338); // il phonenumber dopo 9 numeri da errore.
+        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722");
 
         Tavoli tavoli1 = new Tavoli(1, 2, true);
 
@@ -32,12 +32,14 @@ public class Start {
         menu.addPortata(bevanda1);
         menu.addPortata(bevanda2);
         menu.printAllMenu();
+        ristorante.infoRistorante();
+        //ristorante.printAllMenu();
         System.out.println("----------LISTA CLIENTI----------");
         ristorante.addClient(cliente1);
         ristorante.printAllClients();
         System.out.println("----------LISTA TAVOLI-----------");
         ristorante.addTavoli(tavoli1);
         ristorante.printAllTables();
-        //ristorante.printAllMenu();
+
     }
 }

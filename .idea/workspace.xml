@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Refactoring and cleaning code.">
+      <change afterPath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/ListaClienti.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/ListaTavoli.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Ristorante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/SecondiPiatti.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Tavoli.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/ListaClienti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/PrimiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/PrimiPiatti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/ListaTavoli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HzG1JnlHEDNabmmnCOncgFCjsq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/crist/Documents/Develhope/TeamProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="" />
+      <created>1669280281390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669280281390</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feature: Refactoring 24/11/2022">
+      <created>1669286025367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286025367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Authors: Cristian, Anthony, Emiliano.&#10;fix: now Tavernello is alcoholic.&#10;feature: added Cliente.">
+      <created>1669309267640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669309267640</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feature add: Tavoli.&#10;refactoring: SecondiPiatti.">
+      <created>1669396707373</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669396707373</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactoring code 01/12/2022.">
+      <created>1669914719590</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669914719590</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Author: Emiliano&#10;fix: printPortataDetails now working as intendend.">
+      <created>1669984708159</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669984708159</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactoring and cleaning code.">
+      <created>1670250041376</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670250041376</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develhope" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/TeamProject" />
+    </ignored-roots>
+    <MESSAGE value="feature: Refactoring 24/11/2022" />
+    <MESSAGE value="Authors: Cristian, Anthony, Emiliano.&#10;fix: now Tavernello is alcoholic.&#10;feature: added Cliente." />
+    <MESSAGE value="feature add: Tavoli.&#10;refactoring: SecondiPiatti." />
+    <MESSAGE value="refactoring code 01/12/2022." />
+    <MESSAGE value="Author: Emiliano&#10;fix: printPortataDetails now working as intendend." />
+    <MESSAGE value="Refactoring and cleaning code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and cleaning code." />
+  </component>
+</project>

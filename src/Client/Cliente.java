@@ -4,8 +4,8 @@ public class Cliente{
 
     private String name;
     private String surname;
-    private int phoneNumber;
-    public Cliente(String name, String surname, int phoneNumber) {
+    private String phoneNumber;
+    public Cliente(String name, String surname, String phoneNumber) {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
@@ -27,16 +27,16 @@ public class Cliente{
         this.surname = surname;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
 
     public void printAllClients() {
-        System.out.println("Nome: " + getName() + " - " + "Cognome: " + getSurname() + " - " + "Numero di telefono: " + getPhoneNumber() + " - " + hasBooked());
+        System.out.println("Nome: " + getName() + " - " + "Cognome: " + getSurname() + " - " + "Numero di telefono: " + getPhoneNumber());
     }
 }

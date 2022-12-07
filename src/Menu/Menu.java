@@ -5,48 +5,9 @@ import java.util.List;
 
 public class Menu {
 
+    private List<Portata> listaPortata = new ArrayList<>();
+    private List<EnumTipoMenu> type;
 
-    //TODO occhio ai final
-    private final List<Portata> listaPortata = new ArrayList<>();
-    private String nomeRistorante;
-
-    //TODO questo devo essere un enumerato
-    private String tipoMenu;
-    private String nomeMenu;
-
-
-    public Menu(String nomeRistorante, String tipoMenu, String nomeMenu) {
-        this.nomeRistorante = nomeRistorante;
-        this.tipoMenu = tipoMenu;
-        this.nomeMenu = nomeMenu;
-    }
-
-    public String getNomeRistorante() {
-        return nomeRistorante;
-    }
-
-    public void setNomeRistorante(String nomeRistorante) {
-        this.nomeRistorante = nomeRistorante;
-    }
-
-    public String getTipoMenu() {
-        return tipoMenu;
-    }
-
-    public void setTipoMenu(String tipoMenu) {
-        this.tipoMenu = tipoMenu;
-    }
-
-    public String getNomeMenu() {
-        return nomeMenu;
-    }
-
-    public void setNomeMenu(String nomeMenu) {
-        this.nomeMenu = nomeMenu;
-    }
-
-
-    //TODO fare solo un metodo addPortata
     public void addPortata(Portata portata) {
         listaPortata.add(portata);
     }
@@ -55,12 +16,17 @@ public class Menu {
         listaPortata.remove(portata);
     }
 
+    public List<EnumTipoMenu> getType() {
+        return type;
+    }
+
+    public void setType(List<EnumTipoMenu> type) {
+        this.type = type;
+    }
 
     public void printAllMenu() {
-        System.out.println("RISTORANTE:" + "\s" + nomeRistorante + "\n" + "MENU' DI: " + "\s" + tipoMenu + "\n" + "NOME DEL MENU': " + "\s" + nomeMenu);
         for (Portata portata : listaPortata) {
             portata.printPortataDetail();
-
         }
     }
 }
