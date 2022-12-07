@@ -1,3 +1,5 @@
+package Menu;
+
 public class SecondiPiatti extends Portata {
 
     private boolean isFresh;

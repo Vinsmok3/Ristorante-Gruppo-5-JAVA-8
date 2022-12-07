@@ -1,3 +1,5 @@
+package Menu;
+
 public class Dolci extends Portata {
 
     private boolean isHomeMade;

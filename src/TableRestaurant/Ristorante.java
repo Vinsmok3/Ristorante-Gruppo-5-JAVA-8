@@ -1,7 +1,12 @@
+package TableRestaurant;
+
+import Client.Cliente;
+import Menu.Menu;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ristorante extends Menu{
+public class Ristorante extends Menu {
     private final List<Cliente> clientList = new ArrayList<>();
     private final List<Tavoli> tavoliList = new ArrayList<>();
 

@@ -1,3 +1,5 @@
+package Menu;
+
 public class PrimiPiatti extends Portata {
     private boolean glutenFree;
 

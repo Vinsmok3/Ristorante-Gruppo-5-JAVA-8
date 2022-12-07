@@ -1,3 +1,5 @@
+package Menu;
+
 public class Bevande extends Portata {
 
     private int alcoholicStrength;

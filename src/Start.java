@@ -1,3 +1,8 @@
+import Client.Cliente;
+import Menu.*;
+import TableRestaurant.Ristorante;
+import TableRestaurant.Tavoli;
+
 public class Start {
     public static void main(String[] args) {
         Menu menu = new Menu("Ammutta Muddica", "Pesce", "4 Uomini e un pesce");

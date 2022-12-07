@@ -1,3 +1,5 @@
+package TableRestaurant;
+
 public class Tavoli extends ListaTavoli {
     //TODO riflettere sul final!
     private final boolean isOutside;

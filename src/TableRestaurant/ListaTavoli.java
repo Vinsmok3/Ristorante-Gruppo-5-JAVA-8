@@ -1,3 +1,5 @@
+package TableRestaurant;
+
 public class ListaTavoli {
 
     private int number;
