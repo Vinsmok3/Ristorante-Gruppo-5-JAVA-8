@@ -3,5 +3,8 @@ package Menu;
 public enum EnumTipoMenu {
     VEGETARIANO,
     BAMBINO,
-    CLASSICO;
+    CLASSICO,
+    BAMBINO_CLASSICO,
+    ANALCOLICO,
+    ALCOLICO;
 }

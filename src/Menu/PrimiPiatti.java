@@ -1,14 +1,16 @@
 package Menu;
 
+import java.util.List;
+
 public class PrimiPiatti extends Portata {
     private boolean glutenFree;
 
-    public PrimiPiatti(String type, String name, Integer price) {
-        super(type, name, price);
+    public PrimiPiatti(String type, String name, Integer price, EnumTipoMenu tipoPortata) {
+        super(type, name, price,tipoPortata);
     }
 
-    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree) {
-        super(type, name, price);
+    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree,EnumTipoMenu tipoPortata) {
+        super(type, name, price,tipoPortata);
         this.glutenFree = glutenFree;
     }
     public String isGlutenFree() {
@@ -20,7 +22,7 @@ public class PrimiPiatti extends Portata {
     }
     @Override
     public void printPortataDetail() {
-        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + isGlutenFree());
+        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + isGlutenFree()+" - Tipo portata: "+ getTipoPortata());
     }
 }
 

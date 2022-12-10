@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Refactoring and cleaning code.">
-      <change afterPath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/ListaClienti.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/ListaTavoli.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Ristorante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/SecondiPiatti.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Tavoli.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/ListaClienti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Bevande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Bevande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Dolci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Dolci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Portata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu/PrimiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/PrimiPiatti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/SecondiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/SecondiPiatti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/ListaTavoli.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develhope" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/crist/Documents/Develhope/TeamProject",
+    "last_opened_file_path": "C:/Users/emidi/OneDrive/Desktop/gruppo5Java8/Ristorante-Gruppo-5-JAVA-8",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",

@@ -6,11 +6,13 @@ public class Portata {
     private String name;
 
     private double price;
+    private EnumTipoMenu tipoPortata;
 
-    public Portata(String type, String name, Integer price) {
+    public Portata(String type, String name, double price, EnumTipoMenu tipoPortata) {
         this.type = type;
         this.name = name;
         this.price = price;
+        this.tipoPortata = tipoPortata;
     }
 
     public String getName() {
@@ -37,7 +39,15 @@ public class Portata {
         this.type = type;
     }
 
+    public EnumTipoMenu getTipoPortata() {
+        return tipoPortata;
+    }
+
+    public void setTipoPortata(EnumTipoMenu tipoPortata) {
+        this.tipoPortata = tipoPortata;
+    }
+
     public void printPortataDetail() {
-        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price);
+        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+tipoPortata);
     }
 }
