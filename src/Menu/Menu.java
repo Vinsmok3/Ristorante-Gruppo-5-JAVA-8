@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Menu {
 
-    private final List<Portata> listaPortata = new ArrayList<>();
+    private List<Portata> listaPortata = new ArrayList<>();
     private List<EnumTipoMenu> type;
 
     public void addPortata(Portata portata) {

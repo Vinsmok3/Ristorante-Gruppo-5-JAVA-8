@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ristorante extends Menu{
-    private final List<Cliente> clientList = new ArrayList<>();
-    private final List<Tavoli> tavoliList = new ArrayList<>();
+    private List<Cliente> clientList = new ArrayList<>();
+    private List<Tavoli> tavoliList = new ArrayList<>();
 
     private String nomeRistorante;
     private String tipoMenu;

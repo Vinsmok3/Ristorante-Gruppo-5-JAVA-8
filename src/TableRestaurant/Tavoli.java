@@ -2,7 +2,7 @@ package TableRestaurant;
 
 public class Tavoli{
 
-    private final boolean isOutside;
+    private boolean isOutside;
     private int number;
     private int chairs;
 

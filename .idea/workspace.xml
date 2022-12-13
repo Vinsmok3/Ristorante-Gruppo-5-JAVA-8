@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="General Refactoring.">
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Author: Anthony&#10;Feature: Refactoring Dolci">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2022_13_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2022_13_27__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/EnumTipoMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/EnumTipoMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/SecondiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/SecondiPiatti.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Tavoli.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/crist/Documents/Develhope/Java/JavaPRO_Exercises/switch-1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emidi/OneDrive/Desktop/gruppo5Java8/Ristorante-Gruppo-5-JAVA-8&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
