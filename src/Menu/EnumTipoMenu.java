@@ -6,5 +6,5 @@ public enum EnumTipoMenu {
     CLASSICO,
     BAMBINO_CLASSICO,
     ANALCOLICO,
-    ALCOLICO;
+    ALCOLICO
 }
