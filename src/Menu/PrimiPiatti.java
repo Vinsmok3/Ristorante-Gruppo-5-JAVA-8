@@ -5,6 +5,7 @@ import java.util.List;
 public class PrimiPiatti extends Portata {
     private boolean glutenFree;
 
+    //TODO
     public PrimiPiatti(String type, String name, Integer price, EnumTipoMenu tipoPortata) {
         super(type, name, price,tipoPortata);
     }
@@ -13,6 +14,8 @@ public class PrimiPiatti extends Portata {
         super(type, name, price,tipoPortata);
         this.glutenFree = glutenFree;
     }
+
+    //TODO booleano e metodo void
     public String isGlutenFree() {
         if (glutenFree) {
             return "- Contiene il glutine";

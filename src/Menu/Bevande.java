@@ -4,7 +4,10 @@ import java.util.List;
 
 public class Bevande extends Portata {
 
+    //TODO usare un booleano e eliminare il costruttore in più, rivediamo un po questo approccio
     private int alcoholicStrength;
+
+    private boolean isAlcoholic;
 
     public Bevande(String type, String name, Integer price,EnumTipoMenu tipoPortata) {
         super(type, name, price,tipoPortata);
@@ -15,11 +18,11 @@ public class Bevande extends Portata {
         this.alcoholicStrength = alcoholicStrength;
     }
 
-    public String getAlcoolInfo() {
+    //TODO mai far tornare stringa vuota o null, da completare
+    public void printAlcoolInfo() {
         if (alcoholicStrength > 0) {
-            return "- Grado Alcolico: " + alcoholicStrength + "%";
+            System.out.println("- Grado Alcolico: " + alcoholicStrength + "%");
         }
-        return "";
     }
 
     @Override

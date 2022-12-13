@@ -4,6 +4,8 @@ import java.util.List;
 
 public class Dolci extends Portata {
 
+
+    //TODO stessa cosa di bevande
     private boolean isHomeMade;
 
     public Dolci(String type, String name, Integer price, EnumTipoMenu tipoPortata) {

@@ -33,6 +33,7 @@ public class Start {
 
         Tavoli tavoli1 = new Tavoli(1, 2, true);
 
+
         //MENU-CLASSICO
         menuClassico.addPortata(primo1);
         menuClassico.addPortata(primo2);

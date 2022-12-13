@@ -7,6 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ristorante extends Menu{
+
+
+
+
+    //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù
     private List<Cliente> clientList = new ArrayList<>();
     private List<Tavoli> tavoliList = new ArrayList<>();
 

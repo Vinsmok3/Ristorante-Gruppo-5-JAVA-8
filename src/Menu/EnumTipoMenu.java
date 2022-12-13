@@ -1,10 +1,18 @@
 package Menu;
 
 public enum EnumTipoMenu {
-    VEGETARIANO,
+    VEGETARIANO ("dolce solo per vegetariani"),
     BAMBINO,
     CLASSICO,
     BAMBINO_CLASSICO,
-    ANALCOLICO,
-    ALCOLICO
+    ;
+
+    private String descripition;
+    EnumTipoMenu(String descripition) {
+        this.descripition = descripition;
+    }
+
+    public String getDescripition() {
+        return descripition;
+    }
 }

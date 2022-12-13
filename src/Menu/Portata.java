@@ -6,6 +6,8 @@ public class Portata {
     private String name;
 
     private double price;
+
+    //TODO tipoPortataEnum per cleaning code
     private EnumTipoMenu tipoPortata;
 
     public Portata(String type, String name, double price, EnumTipoMenu tipoPortata) {
@@ -48,6 +50,6 @@ public class Portata {
     }
 
     public void printPortataDetail() {
-        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+tipoPortata);
+        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+tipoPortata.getDescripition());
     }
 }

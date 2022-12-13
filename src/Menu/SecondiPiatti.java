@@ -4,6 +4,8 @@ import java.util.List;
 
 public class SecondiPiatti extends Portata {
 
+
+    //TODO stessa cosa delle altre classi
     private boolean isFresh;
 
     public SecondiPiatti(String type, String name, Integer price, EnumTipoMenu tipoPortata) {
@@ -20,6 +22,7 @@ public class SecondiPiatti extends Portata {
         System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + getFishInfo()+" - Tipo portata: "+ getTipoPortata());
     }
 
+    //TODO stessa cosa qui
     public String getFishInfo() {
         if (isFresh) {
             return " - Pescato del giorno.";
