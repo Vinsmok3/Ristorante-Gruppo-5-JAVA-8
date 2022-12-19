@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Ristorante{
 
-    //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù
+    //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù test gg
     private List<Cliente> clientList = new ArrayList<>();
     private List<Tavoli> tavoliList = new ArrayList<>();
 
