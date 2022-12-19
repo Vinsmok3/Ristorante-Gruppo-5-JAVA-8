@@ -6,24 +6,19 @@ import Menu.Menu;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ristorante extends Menu{
-
-
-
+public class Ristorante{
 
     //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù
     private List<Cliente> clientList = new ArrayList<>();
     private List<Tavoli> tavoliList = new ArrayList<>();
 
     private String nomeRistorante;
-    private String tipoMenu;
-    private String nomeMenu;
 
     public Ristorante(String nomeRistorante, String tipoMenu, String nomeMenu) {
         this.nomeRistorante = nomeRistorante;
-        this.tipoMenu = tipoMenu;
-        this.nomeMenu = nomeMenu;
     }
+
+    Menu menu = new Menu("PESCE", "4 Uomini e un Pesce");
 
     public String getNomeRistorante() {
         return nomeRistorante;
@@ -33,21 +28,6 @@ public class Ristorante extends Menu{
         this.nomeRistorante = nomeRistorante;
     }
 
-    public String getTipoMenu() {
-        return tipoMenu;
-    }
-
-    public void setTipoMenu(String tipoMenu) {
-        this.tipoMenu = tipoMenu;
-    }
-
-    public String getNomeMenu() {
-        return nomeMenu;
-    }
-
-    public void setNomeMenu(String nomeMenu) {
-        this.nomeMenu = nomeMenu;
-    }
 
     public void addClient(Cliente cliente) {
         clientList.add(cliente);
@@ -71,18 +51,13 @@ public class Ristorante extends Menu{
         }
     }
 
-    /**
-     *
-     */
-    @Override
-    public void printAllMenu() { //Non printa.
-        super.printAllMenu();
-    }
-
     public void infoRistorante(){
-        System.out.println("RISTORANTE: " + getNomeRistorante() + " - " + "TIPO MENU: " + getTipoMenu() + " - " + "NOME MENU: " + getNomeMenu());
+        System.out.println("RISTORANTE: " + getNomeRistorante());
     }
-
+     public void infoMenu(){
+         System.out.println("TIPO MENU: " + menu.getTipoMenu());
+         System.out.println("NOME MENU: " + menu.getNomeMenu());
+     }
     public void printAllTables() {
         for (Tavoli listaTavoli : tavoliList) {
             listaTavoli.printAllTables();

@@ -50,6 +50,6 @@ public class Portata {
     }
 
     public void printPortataDetail() {
-        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+tipoPortata.getDescripition());
+        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription());
     }
 }

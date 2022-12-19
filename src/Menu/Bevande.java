@@ -4,29 +4,28 @@ import java.util.List;
 
 public class Bevande extends Portata {
 
-    //TODO usare un booleano e eliminare il costruttore in più, rivediamo un po questo approccio
-    private int alcoholicStrength;
-
     private boolean isAlcoholic;
 
-    public Bevande(String type, String name, Integer price,EnumTipoMenu tipoPortata) {
+    public Bevande(String type, String name, Integer price, boolean isAlcoholic, EnumTipoMenu tipoPortata) {
         super(type, name, price,tipoPortata);
+        this.isAlcoholic = isAlcoholic;
     }
 
-    public Bevande(String type, String name, Integer price, int alcoholicStrength, EnumTipoMenu tipoPortata) {
-        super(type, name, price,tipoPortata);
-        this.alcoholicStrength = alcoholicStrength;
+
+    public String printAlcoholInfo() {
+        if (isAlcoholic) {
+            return "Alcolico";
+        }else return "Analcolico";
     }
 
-    //TODO mai far tornare stringa vuota o null, da completare
-    public void printAlcoolInfo() {
-        if (alcoholicStrength > 0) {
-            System.out.println("- Grado Alcolico: " + alcoholicStrength + "%");
-        }
-    }
+    /*public void printAlcoholInfo() {
+        if (isAlcoholic) {
+            System.out.println("Alcolico");
+        }else System.out.println("Analcolico");
+    }*/
 
     @Override
     public void printPortataDetail() {
-        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + getAlcoolInfo() +" - Tipo portata: "+ getTipoPortata());
+        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + printAlcoholInfo() + " - Tipo portata: " + getTipoPortata());
     }
 }

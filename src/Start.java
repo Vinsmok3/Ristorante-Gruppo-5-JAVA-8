@@ -5,15 +5,16 @@ import TableRestaurant.Tavoli;
 
 public class Start {
     public static void main(String[] args) {
-        Menu menuClassico = new Menu();
-        Menu menuBambino = new Menu();
-        Menu menuVegetariano = new Menu();
+        Menu menuClassico = new Menu("CLASSICO","CLASSICO");
+        Menu menuBambino = new Menu("BAMBINO","BAMBINO");
+        Menu menuVegetariano = new Menu("VEGETARIANO","VEGETERIANO");
+
 
         Ristorante ristorante = new Ristorante("Ammutta Muddica", "Pesce", "4 Uomini e un pesce");
 
         //BEVANDE
-        Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, 9, EnumTipoMenu.ALCOLICO);
-        Portata bevanda2 = new Bevande("BEVANDA: ", "Acqua", 10, EnumTipoMenu.ANALCOLICO);
+        Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, true, EnumTipoMenu.ALCOLICO);
+        Portata bevanda2 = new Bevande("BEVANDA: ", "Acqua", 10, false, EnumTipoMenu.ANALCOLICO);
         //PRIMI
         Portata primo1 = new PrimiPiatti("PRIMI: ", "Pasta con le cozze", 23, true, EnumTipoMenu.CLASSICO);
         Portata primo2 = new PrimiPiatti("PRIMI: ", "Pasta con le vongole", 25, true, EnumTipoMenu.CLASSICO);
@@ -55,6 +56,7 @@ public class Start {
         menuBambino.addPortata(bevanda2);
 
         ristorante.infoRistorante();
+        ristorante.infoMenu();
         System.out.println("----------CLASSICO----------");
         menuClassico.printAllMenu();
         System.out.println("----------BAMBINO----------");

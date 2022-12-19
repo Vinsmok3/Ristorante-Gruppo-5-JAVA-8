@@ -4,28 +4,23 @@ import java.util.List;
 
 public class Dolci extends Portata {
 
-
-    //TODO stessa cosa di bevande
     private boolean isHomeMade;
 
-    public Dolci(String type, String name, Integer price, EnumTipoMenu tipoPortata) {
-        super(type, name, price,tipoPortata);
-    }
 
-    public Dolci(String type, String name, Integer price, boolean isHomeMade,EnumTipoMenu tipoPortata) {
+    public Dolci(String type, String name, Integer price, boolean isHomeMade, EnumTipoMenu tipoPortata) {
         super(type, name, price, tipoPortata);
         this.isHomeMade = isHomeMade;
     }
 
-    public String isSweetHomeMade() {
+    public String getSweetHomeMadeInfo() {
         if (isHomeMade) {
-            return "- è fatto in casa";
-        } else return "- non è fatto in casa";
+            return "- Fatto in casa";
+        } else return "- Non è fatto in casa";
     }
 
     @Override
     public void printPortataDetail() {
-        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + isSweetHomeMade()+" - Tipo portata: "+ getTipoPortata());
+        System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + getSweetHomeMadeInfo() + " - Tipo portata: " + getTipoPortata());
     }
 
 }
