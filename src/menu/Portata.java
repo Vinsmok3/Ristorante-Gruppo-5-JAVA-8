@@ -1,4 +1,4 @@
-package Menu;
+package menu;
 
 public class Portata {
     private String type;
@@ -8,9 +8,9 @@ public class Portata {
     private double price;
 
     //TODO tipoPortataEnum per cleaning code
-    private EnumTipoMenu tipoPortata;
+    private EnumTipoPortata tipoPortata;
 
-    public Portata(String type, String name, double price, EnumTipoMenu tipoPortata) {
+    public Portata(String type, String name, double price, EnumTipoPortata tipoPortata) {
         this.type = type;
         this.name = name;
         this.price = price;
@@ -41,15 +41,15 @@ public class Portata {
         this.type = type;
     }
 
-    public EnumTipoMenu getTipoPortata() {
+    public EnumTipoPortata getTipoPortata() {
         return tipoPortata;
     }
 
-    public void setTipoPortata(EnumTipoMenu tipoPortata) {
+    public void setTipoPortata(EnumTipoPortata tipoPortata) {
         this.tipoPortata = tipoPortata;
     }
 
-    public void printPortataDetail() {
-        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription());
+    public String printPortataDetail() {
+        return "Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription() ;
     }
 }

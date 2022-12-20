@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 public class Cliente{
 
@@ -9,6 +9,7 @@ public class Cliente{
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
+
     }
 
     public String getName() {

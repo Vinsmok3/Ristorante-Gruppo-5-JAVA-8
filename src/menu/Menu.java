@@ -1,4 +1,4 @@
-package Menu;
+package menu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,11 @@ public class Menu {
     //TODO spostare tutto da ristornate a menù come abbiamo parlato alla call
 
     private List<Portata> listaPortata = new ArrayList<>();
-    private List<EnumTipoMenu> type;
+    private List<EnumTipoPortata> type;
     private String tipoMenu;
     private String nomeMenu;
+    private EnumTipoPortata enumTipoMenu;
+    private EnumTipoDrink tipoDrink;
 
     public Menu(String tipoMenu, String nomeMenu) {
         this.tipoMenu = tipoMenu;
@@ -25,11 +27,11 @@ public class Menu {
         listaPortata.remove(portata);
     }
 
-    public List<EnumTipoMenu> getType() {
+    public List<EnumTipoPortata> getType() {
         return type;
     }
 
-    public void setType(List<EnumTipoMenu> type) {
+    public void setType(List<EnumTipoPortata> type) {
         this.type = type;
     }
 
@@ -49,13 +51,29 @@ public class Menu {
         this.nomeMenu = nomeMenu;
     }
 
+    public EnumTipoPortata getEnumTipoMenu() {
+        return enumTipoMenu;
+    }
+
+    public void setEnumTipoMenu(EnumTipoPortata enumTipoMenu) {
+        this.enumTipoMenu = enumTipoMenu;
+    }
+
     //TODO la stampa del menù deve comprendere tutto
     //rinominare
     public void printAllMenu() {
         System.out.println(getNomeMenu());
         System.out.println(getTipoMenu());
         for (Portata portata : listaPortata) {
-            portata.printPortataDetail();
+            System.out.println(portata.printPortataDetail());
+        }
+    }
+    // INUTILE SE AGGIUNGIAMO MANUALMENTE OGNI PORTATA AD OGNI MENU
+    public void printChildMenu(){
+        for(Portata portata : listaPortata){
+            if (enumTipoMenu == EnumTipoPortata.BAMBINO && tipoDrink == EnumTipoDrink.ANALCOLICO) {
+                System.out.println(portata.printPortataDetail());
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
-TableRestaurant.Ristorante Gruppo 5: Team5
+tableRestaurant.Ristorante Gruppo 5: Team5
 
 Menù di pesce.
-Menu.Bevande:
+menu.Bevande:
 - Vino
 - Birra
 - Coca Cola
@@ -21,7 +21,7 @@ Secondi piatti:
 - Frittura di calamari
 - Gamberoni
 
-Menu.Dolci:
+menu.Dolci:
  - Parfait di mandorle
  - Tiramisù
  - Bigné

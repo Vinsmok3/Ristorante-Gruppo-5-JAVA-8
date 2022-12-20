@@ -1,4 +1,4 @@
-package TableRestaurant;
+package tableRestaurant;
 
 public class Tavoli{
 

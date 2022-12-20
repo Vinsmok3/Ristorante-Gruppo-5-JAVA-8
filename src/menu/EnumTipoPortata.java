@@ -1,16 +1,14 @@
-package Menu;
+package menu;
 
-public enum EnumTipoMenu {
+public enum EnumTipoPortata {
     VEGETARIANO ("Solo per vegetariani"),
     BAMBINO("Piatto adatto per i bambini"),
     CLASSICO("Piatto tipico della casa"),
     BAMBINO_CLASSICO("Piatto tipico adatto anche ai bambini"),
-    ALCOLICO("Bevanda Alcolica"),
-    ANALCOLICO("Bevanda Analcolica")
-    ;
+    BEVANDA("E' una bevanda");
 
     private String description;
-    EnumTipoMenu(String description) {
+    EnumTipoPortata(String description) {
         this.description = description;
     }
 
