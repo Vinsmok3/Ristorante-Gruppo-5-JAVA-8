@@ -68,7 +68,6 @@ public class Menu {
             System.out.println(portata.printPortataDetail());
         }
     }
-    // INUTILE SE AGGIUNGIAMO MANUALMENTE OGNI PORTATA AD OGNI MENU
     public void printChildMenu(){
         for(Portata portata : listaPortata){
             if (enumTipoMenu == EnumTipoPortata.BAMBINO && tipoDrink == EnumTipoDrink.ANALCOLICO) {

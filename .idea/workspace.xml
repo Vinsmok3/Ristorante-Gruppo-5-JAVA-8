@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Added: Different Menus.&#10;Code Reformatting.">
-      <change afterPath="$PROJECT_DIR$/src/menu/EnumTipoDrink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Various Fixes.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/menu.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Client/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Client/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/EnumTipoMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/EnumTipoMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" afterDir="false" />
@@ -23,16 +16,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Ristorante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Ristorante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Tavoli.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Tavoli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Bevande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Bevande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Dolci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Dolci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/EnumTipoMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/EnumTipoPortata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Portata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/PrimiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PrimiPiatti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/SecondiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/SecondiPiatti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableRestaurant/Ristorante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Bevande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Bevande.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

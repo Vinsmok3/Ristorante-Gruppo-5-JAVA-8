@@ -10,6 +10,7 @@ public class Bevande extends Portata {
         super(type, name, price, tipoPortata);
         this.tipoDrink = tipoDrink;
         this.isAlcoholic = isAlcoholic;
+        this.grades = grades;
     }
 
 

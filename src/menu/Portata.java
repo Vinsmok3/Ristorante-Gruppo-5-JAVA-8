@@ -7,7 +7,6 @@ public class Portata {
 
     private double price;
 
-    //TODO tipoPortataEnum per cleaning code
     private EnumTipoPortata tipoPortata;
 
     public Portata(String type, String name, double price, EnumTipoPortata tipoPortata) {

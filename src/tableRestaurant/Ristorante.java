@@ -10,11 +10,9 @@ public class Ristorante{
 
     //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù test gg
     private List<Cliente> clientList = new ArrayList<>();
-    // USARE MAP PER I TAVOLI
     private List<Tavoli> tavoliList = new ArrayList<>();
-
     private String nomeRistorante;
-// RISTORANTE NON DEVE AVERE TIPO MENU, MA TIPO RISTORANTE + NOME + TAVOLI + INFO RISTORANTE
+
     public Ristorante(String nomeRistorante, String tipoMenu, String nomeMenu) {
         this.nomeRistorante = nomeRistorante;
     }
@@ -29,8 +27,7 @@ public class Ristorante{
         this.nomeRistorante = nomeRistorante;
     }
 
-// LISTA CLIENTI O DA SPOSTARE IN CLASSE CLIENTI O NON INDISPENSABILE PER RISTORANTE...
-    // AGGIUNGERE AL MASSIMO MAP PER TAVOLI E SAPERE QUANTI TAVOLI CI SONO E QUALI SONO LIBERI O OCCUPATI O FUORI
+
     public void addClient(Cliente cliente) {
         clientList.add(cliente);
     }
@@ -38,7 +35,7 @@ public class Ristorante{
     public void removeClient(Cliente cliente) {
         clientList.remove(cliente);
     }
-// METODO NON NECESSARIO VISTO CHE UN RISTORANTE AVRA' UN TOT FISSO DI TAVOLI
+
     public void addTavoli(Tavoli tavoli) {
         tavoliList.add(tavoli);
     }
