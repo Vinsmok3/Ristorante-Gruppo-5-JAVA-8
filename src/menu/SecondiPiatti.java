@@ -5,7 +5,7 @@ public class SecondiPiatti extends Portata {
 
     private boolean isFresh;
 
-    public SecondiPiatti(String type, String name, Integer price, boolean isFresh, EnumTipoPortata tipoPortata) {
+    public SecondiPiatti(String type, String name, Integer price, boolean isFresh, TypesEnum tipoPortata) {
         super(type, name, price, tipoPortata);
         this.isFresh = isFresh;
     }

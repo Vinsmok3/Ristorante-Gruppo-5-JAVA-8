@@ -13,7 +13,12 @@ public class Ristorante{
     private List<Tavoli> tavoliList = new ArrayList<>();
     private String nomeRistorante;
 
+    //TODO qui ci deve essere un menù che verrà aggiunto al ristorante
+
+    //TODO possiamo fare anche un enum per il ristorante che indica il  e poi
+    //utilizzare anche l'enumeraro
     public Ristorante(String nomeRistorante, String tipoMenu, String nomeMenu) {
+
         this.nomeRistorante = nomeRistorante;
     }
 

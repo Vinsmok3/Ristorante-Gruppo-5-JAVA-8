@@ -8,12 +8,13 @@ public class Menu {
     //TODO spostare tutto da ristornate a menù come abbiamo parlato alla call
 
     private List<Portata> listaPortata = new ArrayList<>();
-    private List<EnumTipoPortata> type;
+    private List<TypesEnum> type;
     private String tipoMenu;
     private String nomeMenu;
-    private EnumTipoPortata enumTipoMenu;
+    private TypesEnum enumTipoMenu;
     private EnumTipoDrink tipoDrink;
 
+    //TODO inserire il tipo TypesEnum
     public Menu(String tipoMenu, String nomeMenu) {
         this.tipoMenu = tipoMenu;
         this.nomeMenu = nomeMenu;
@@ -27,11 +28,11 @@ public class Menu {
         listaPortata.remove(portata);
     }
 
-    public List<EnumTipoPortata> getType() {
+    public List<TypesEnum> getType() {
         return type;
     }
 
-    public void setType(List<EnumTipoPortata> type) {
+    public void setType(List<TypesEnum> type) {
         this.type = type;
     }
 
@@ -51,11 +52,11 @@ public class Menu {
         this.nomeMenu = nomeMenu;
     }
 
-    public EnumTipoPortata getEnumTipoMenu() {
+    public TypesEnum getEnumTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setEnumTipoMenu(EnumTipoPortata enumTipoMenu) {
+    public void setEnumTipoMenu(TypesEnum enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 
@@ -70,7 +71,7 @@ public class Menu {
     }
     public void printChildMenu(){
         for(Portata portata : listaPortata){
-            if (enumTipoMenu == EnumTipoPortata.BAMBINO && tipoDrink == EnumTipoDrink.ANALCOLICO) {
+            if (enumTipoMenu == TypesEnum.BAMBINO && tipoDrink == EnumTipoDrink.ANALCOLICO) {
                 System.out.println(portata.printPortataDetail());
             }
         }

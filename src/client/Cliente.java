@@ -5,6 +5,8 @@ public class Cliente{
     private String name;
     private String surname;
     private String phoneNumber;
+
+    //TODO TypesEnum va inserito anche qui
     public Cliente(String name, String surname, String phoneNumber) {
         this.name = name;
         this.surname = surname;

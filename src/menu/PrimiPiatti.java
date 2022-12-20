@@ -3,7 +3,7 @@ package menu;
 public class PrimiPiatti extends Portata {
     private boolean glutenFree;
 
-    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, EnumTipoPortata tipoPortata) {
+    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, TypesEnum tipoPortata) {
         super(type, name, price, tipoPortata);
         this.glutenFree = glutenFree;
     }

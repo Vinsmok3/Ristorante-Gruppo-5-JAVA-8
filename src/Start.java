@@ -13,22 +13,22 @@ public class Start {
         Ristorante ristorante = new Ristorante("Ammutta Muddica", "Pesce", "4 Uomini e un pesce");
 
         //BEVANDE
-        Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, true, EnumTipoPortata.BEVANDA,EnumTipoDrink.ALCOLICO_LEGGERO, 7.5);
-        Portata bevanda2 = new Bevande("BEVANDA: ", "Acqua", 10, false, EnumTipoPortata.BEVANDA,EnumTipoDrink.ANALCOLICO, 0.0);
+        Portata bevanda1 = new Bevande("BEVANDA: ", "Vino", 20, true, TypesEnum.BEVANDA,EnumTipoDrink.ALCOLICO_LEGGERO, 7.5);
+        Portata bevanda2 = new Bevande("BEVANDA: ", "Acqua", 10, false, TypesEnum.BEVANDA,EnumTipoDrink.ANALCOLICO, 0.0);
         //PRIMI
-        Portata primo1 = new PrimiPiatti("PRIMI: ", "Pasta con le cozze", 23, true, EnumTipoPortata.CLASSICO);
-        Portata primo2 = new PrimiPiatti("PRIMI: ", "Pasta con le vongole", 25, true, EnumTipoPortata.CLASSICO);
-        Portata primo3 = new PrimiPiatti("PRIMI: ", "Farfalle con il salmone", 18, false, EnumTipoPortata.BAMBINO);
-        Portata primo4 = new PrimiPiatti("PRIMI: ", "Insalata di mare", 22, true, EnumTipoPortata.VEGETARIANO);
+        Portata primo1 = new PrimiPiatti("PRIMI: ", "Pasta con le cozze", 23, true, TypesEnum.CLASSICO);
+        Portata primo2 = new PrimiPiatti("PRIMI: ", "Pasta con le vongole", 25, true, TypesEnum.CLASSICO);
+        Portata primo3 = new PrimiPiatti("PRIMI: ", "Farfalle con il salmone", 18, false, TypesEnum.BAMBINO);
+        Portata primo4 = new PrimiPiatti("PRIMI: ", "Insalata di mare", 22, true, TypesEnum.VEGETARIANO);
         //SECONDI
-        Portata secondi1 = new SecondiPiatti("SECONDI: ", "Pesce Spada", 25, true, EnumTipoPortata.CLASSICO);
-        Portata secondi2 = new SecondiPiatti("SECONDI: ", "Frittura di calamari e gamberi", 10, false, EnumTipoPortata.CLASSICO);
-        Portata secondi3 = new SecondiPiatti("SECONDI: ", "Bastoncini Findus", 5, false, EnumTipoPortata.BAMBINO);
-        Portata secondi4 = new SecondiPiatti("SECONDI: ", "Alghe fritte", 22, true, EnumTipoPortata.VEGETARIANO);
+        Portata secondi1 = new SecondiPiatti("SECONDI: ", "Pesce Spada", 25, true, TypesEnum.CLASSICO);
+        Portata secondi2 = new SecondiPiatti("SECONDI: ", "Frittura di calamari e gamberi", 10, false, TypesEnum.CLASSICO);
+        Portata secondi3 = new SecondiPiatti("SECONDI: ", "Bastoncini Findus", 5, false, TypesEnum.BAMBINO);
+        Portata secondi4 = new SecondiPiatti("SECONDI: ", "Alghe fritte", 22, true, TypesEnum.VEGETARIANO);
         //DOLCI
-        Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true, EnumTipoPortata.VEGETARIANO);
-        Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false, EnumTipoPortata.CLASSICO);
-        Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, true, EnumTipoPortata.BAMBINO);
+        Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true, TypesEnum.VEGETARIANO);
+        Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false, TypesEnum.CLASSICO);
+        Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, true, TypesEnum.BAMBINO);
 
         Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722");
 

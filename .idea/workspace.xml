@@ -6,17 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Various Fixes.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_09_20__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_17_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Bevande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Dolci.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Portata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/PrimiPiatti.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/SecondiPiatti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/SecondiPiatti.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Ristorante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Ristorante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Tavoli.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/TableRestaurant/Tavoli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/Bevande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Bevande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Dolci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Dolci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/EnumTipoPortata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/TypesEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Portata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Portata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/PrimiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PrimiPiatti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/SecondiPiatti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/SecondiPiatti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tableRestaurant/Ristorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tableRestaurant/Ristorante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/emidi/OneDrive/Desktop/gruppo5Java8/Ristorante-Gruppo-5-JAVA-8&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/Michele/OneDrive/Desktop/Ristorante-Gruppo-5-JAVA-8",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

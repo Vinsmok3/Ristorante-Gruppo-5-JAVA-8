@@ -7,9 +7,10 @@ public class Portata {
 
     private double price;
 
-    private EnumTipoPortata tipoPortata;
+    private TypesEnum tipoPortata;
 
-    public Portata(String type, String name, double price, EnumTipoPortata tipoPortata) {
+    //TODO type viene eliminato e cambiamo il nome di EnumTipoPortata in tipoPortataEnum
+    public Portata(String type, String name, double price, TypesEnum tipoPortata) {
         this.type = type;
         this.name = name;
         this.price = price;
@@ -40,15 +41,16 @@ public class Portata {
         this.type = type;
     }
 
-    public EnumTipoPortata getTipoPortata() {
+    public TypesEnum getTipoPortata() {
         return tipoPortata;
     }
 
-    public void setTipoPortata(EnumTipoPortata tipoPortata) {
+    public void setTipoPortata(TypesEnum tipoPortata) {
         this.tipoPortata = tipoPortata;
     }
 
-    public String printPortataDetail() {
-        return "Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription() ;
+    //TODO modificare gli altri metodi
+    public void printPortataDetail() {
+        System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription());
     }
 }
