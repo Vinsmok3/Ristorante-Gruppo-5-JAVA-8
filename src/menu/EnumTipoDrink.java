@@ -6,7 +6,7 @@ public enum EnumTipoDrink {
     ALCOLICO_FORTE("Bevanda alcolica forte"),
     ANALCOLICO("Bevanda analcolica");
 
-    private String description;
+    private final String description;
     EnumTipoDrink(String description) {
         this.description = description;
     }

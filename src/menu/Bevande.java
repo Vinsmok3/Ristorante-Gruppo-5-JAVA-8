@@ -2,9 +2,9 @@ package menu;
 
 public class Bevande extends Portata {
 
-    private boolean isAlcoholic;
-    private double grades;
-    private EnumTipoDrink tipoDrink;
+    private final boolean isAlcoholic;
+    private final double grades;
+    private final EnumTipoDrink tipoDrink;
 
     public Bevande(String type, String name, Integer price, boolean isAlcoholic, TypesEnum tipoPortata, EnumTipoDrink tipoDrink, double grades) {
         super(type, name, price, tipoPortata);

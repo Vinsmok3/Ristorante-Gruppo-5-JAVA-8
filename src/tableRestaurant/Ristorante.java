@@ -1,6 +1,8 @@
 package tableRestaurant;
 
 import client.Cliente;
+import menu.EnumTipoMenu;
+import menu.EnumTipoRistorante;
 import menu.Menu;
 
 import java.util.ArrayList;
@@ -9,21 +11,19 @@ import java.util.List;
 public class Ristorante{
 
     //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù test gg
-    private List<Cliente> clientList = new ArrayList<>();
-    private List<Tavoli> tavoliList = new ArrayList<>();
+    private final List<Cliente> clientList = new ArrayList<>();
+    private final List<Tavoli> tavoliList = new ArrayList<>();
     private String nomeRistorante;
 
     //TODO qui ci deve essere un menù che verrà aggiunto al ristorante
 
     //TODO possiamo fare anche un enum per il ristorante che indica il  e poi
     //utilizzare anche l'enumeraro
-    public Ristorante(String nomeRistorante, String tipoMenu, String nomeMenu) {
 
+    Menu menuPesce = new Menu(EnumTipoMenu.PESCE, "4 Uomini e un Pesce");
+    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante) {
         this.nomeRistorante = nomeRistorante;
     }
-
-    Menu menu = new Menu("PESCE", "4 Uomini e un Pesce");
-
     public String getNomeRistorante() {
         return nomeRistorante;
     }
@@ -56,11 +56,11 @@ public class Ristorante{
     }
 
     public void infoRistorante(){
-        System.out.println("RISTORANTE: " + getNomeRistorante());
+        System.out.println("RISTORANTE: " + getNomeRistorante() + "\n" + "SPECIALITÀ: " + EnumTipoRistorante.PESCE);
     }
      public void infoMenu(){
-         System.out.println("TIPO MENU: " + menu.getTipoMenu());
-         System.out.println("NOME MENU: " + menu.getNomeMenu());
+         System.out.println("NOME MENU: " + menuPesce.getNomeMenu());
+         System.out.println("TIPO MENU: " + menuPesce.getTipoMenu());
      }
     public void printAllTables() {
         for (Tavoli listaTavoli : tavoliList) {

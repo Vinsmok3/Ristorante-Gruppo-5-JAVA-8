@@ -1,17 +1,20 @@
 package client;
 
+import menu.TypesEnum;
+
 public class Cliente{
 
     private String name;
     private String surname;
     private String phoneNumber;
+    private final TypesEnum tipoCliente;
 
     //TODO TypesEnum va inserito anche qui
-    public Cliente(String name, String surname, String phoneNumber) {
+    public Cliente(String name, String surname, String phoneNumber, TypesEnum tipoCliente) {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
-
+        this.tipoCliente = tipoCliente;
     }
 
     public String getName() {

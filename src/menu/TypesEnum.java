@@ -2,11 +2,11 @@ package menu;
 
 public enum TypesEnum {
     VEGETARIANO ("Solo per vegetariani"),
-    CARNIVORO ("Solo per vegetariani"),
-    VEGANO ("Solo per vegetariani");
+    CARNIVORO ("Solo per carnivori"),
+    VEGANO ("Solo per vegani"),
+    BEVANDA ( "Bevanda");
 
-
-    private String description;
+    private final String description;
     TypesEnum(String description) {
         this.description = description;
     }

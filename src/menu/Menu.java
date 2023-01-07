@@ -7,16 +7,15 @@ public class Menu {
 
     //TODO spostare tutto da ristornate a menù come abbiamo parlato alla call
 
-    private List<Portata> listaPortata = new ArrayList<>();
+    private final List<Portata> listaPortata = new ArrayList<>();
     private List<TypesEnum> type;
-    private String tipoMenu;
     private String nomeMenu;
-    private TypesEnum enumTipoMenu;
+    private EnumTipoMenu enumTipoMenu;
     private EnumTipoDrink tipoDrink;
 
     //TODO inserire il tipo TypesEnum
-    public Menu(String tipoMenu, String nomeMenu) {
-        this.tipoMenu = tipoMenu;
+    public Menu(EnumTipoMenu enumTipoMenu, String nomeMenu) {
+        this.enumTipoMenu = enumTipoMenu;
         this.nomeMenu = nomeMenu;
     }
 
@@ -36,12 +35,12 @@ public class Menu {
         this.type = type;
     }
 
-    public String getTipoMenu() {
-        return tipoMenu;
+    public EnumTipoMenu getTipoMenu() {
+        return enumTipoMenu;
     }
 
-    public void setTipoMenu(String tipoMenu) {
-        this.tipoMenu = tipoMenu;
+    public void setTipoMenu(EnumTipoMenu enumTipoMenu) {
+        this.enumTipoMenu = enumTipoMenu;
     }
 
     public String getNomeMenu() {
@@ -52,11 +51,11 @@ public class Menu {
         this.nomeMenu = nomeMenu;
     }
 
-    public TypesEnum getEnumTipoMenu() {
+    public EnumTipoMenu getEnumTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setEnumTipoMenu(TypesEnum enumTipoMenu) {
+    public void setEnumTipoMenu(EnumTipoMenu enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 
@@ -66,15 +65,11 @@ public class Menu {
         System.out.println(getNomeMenu());
         System.out.println(getTipoMenu());
         for (Portata portata : listaPortata) {
-            System.out.println(portata.printPortataDetail());
+            portata.printPortataDetail();
         }
     }
-    public void printChildMenu(){
-        for(Portata portata : listaPortata){
-            if (enumTipoMenu == TypesEnum.BAMBINO && tipoDrink == EnumTipoDrink.ANALCOLICO) {
-                System.out.println(portata.printPortataDetail());
-            }
+
         }
-    }
-}
+
+
 

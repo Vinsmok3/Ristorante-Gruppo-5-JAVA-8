@@ -1,7 +1,7 @@
 package menu;
 
 public class PrimiPiatti extends Portata {
-    private boolean glutenFree;
+    private final boolean glutenFree;
 
     public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, TypesEnum tipoPortata) {
         super(type, name, price, tipoPortata);
@@ -9,17 +9,21 @@ public class PrimiPiatti extends Portata {
     }
 
     //TODO booleano e metodo void
-    public String getGlutenInfo() {
+    /*public boolean isGlutenFree() {
         if (glutenFree) {
-            return "- Contiene il glutine";
+            return true;
         } else {
-            return "- Senza glutine";
+            return false;
         }
-    }
+    }*/
 
     @Override
-    public String printPortataDetail() {
-        return getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + getGlutenInfo() + " - Tipo portata: " + getTipoPortata();
+    public void printPortataDetail() {
+        if (glutenFree) {
+            System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + "Senza Glutine" + " - Tipo portata: " + getTipoPortata());
+        } else {
+            System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + "Con Glutine" + " - Tipo portata: " + getTipoPortata());
+        }
     }
 }
 
