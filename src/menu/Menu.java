@@ -10,11 +10,11 @@ public class Menu {
     private final List<Portata> listaPortata = new ArrayList<>();
     private List<TypesEnum> type;
     private String nomeMenu;
-    private EnumTipoMenu enumTipoMenu;
+    private TipoEnum enumTipoMenu;
     private EnumTipoDrink tipoDrink;
 
     //TODO inserire il tipo TypesEnum
-    public Menu(EnumTipoMenu enumTipoMenu, String nomeMenu) {
+    public Menu(TipoEnum enumTipoMenu, String nomeMenu) {
         this.enumTipoMenu = enumTipoMenu;
         this.nomeMenu = nomeMenu;
     }
@@ -35,11 +35,11 @@ public class Menu {
         this.type = type;
     }
 
-    public EnumTipoMenu getTipoMenu() {
+    public TipoEnum getTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setTipoMenu(EnumTipoMenu enumTipoMenu) {
+    public void setTipoMenu(TipoEnum enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 
@@ -51,11 +51,11 @@ public class Menu {
         this.nomeMenu = nomeMenu;
     }
 
-    public EnumTipoMenu getEnumTipoMenu() {
+    public TipoEnum getEnumTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setEnumTipoMenu(EnumTipoMenu enumTipoMenu) {
+    public void setEnumTipoMenu(TipoEnum enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 

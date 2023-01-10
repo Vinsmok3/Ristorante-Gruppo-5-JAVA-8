@@ -1,6 +1,7 @@
 package menu;
 
 public class PrimiPiatti extends Portata {
+
     private final boolean glutenFree;
 
     public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, TypesEnum tipoPortata) {

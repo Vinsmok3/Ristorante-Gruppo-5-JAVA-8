@@ -5,9 +5,9 @@ import tableRestaurant.Tavoli;
 
 public class Start {
     public static void main(String[] args) {
-        Menu menuPesce = new Menu(EnumTipoMenu.PESCE,"CLASSIC");
-        Menu menuBambino = new Menu(EnumTipoMenu.BAMBINO,"CHILD");
-        Menu menuVegetariano = new Menu(EnumTipoMenu.VEGETARIANO,"VEGGY");
+        Menu menuPesce = new Menu(TipoEnum.PESCE,"CLASSIC");
+        Menu menuBambino = new Menu(TipoEnum.BAMBINO,"CHILD");
+        Menu menuVegetariano = new Menu(TipoEnum.VEGETARIANO,"VEGGY");
 
 
         Ristorante ristorante = new Ristorante("Ammutta Muddica", EnumTipoRistorante.PESCE);

@@ -1,7 +1,6 @@
 package tableRestaurant;
 
 import client.Cliente;
-import menu.EnumTipoMenu;
 import menu.EnumTipoRistorante;
 import menu.Menu;
 
@@ -20,9 +19,21 @@ public class Ristorante{
     //TODO possiamo fare anche un enum per il ristorante che indica il  e poi
     //utilizzare anche l'enumeraro
 
-    Menu menuPesce = new Menu(EnumTipoMenu.PESCE, "4 Uomini e un Pesce");
-    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante) {
+    //TODO cambiare i getter e i setter
+    private Menu menu;
+
+    //TODO capienza ristorante inserire campo, e quindi nel metodo prenota (passeremo un cliente e un tavolo)
+    //dovremmo aggiungere un tavolo alla lista tavoliList che creiamo qui solo se
+    // la size è ancora minore di capienza totale
+
+    //quindi useremo una lista di tavoli e una lista di clienti, su ogni prenotazione
+    // noi aggiugiamo il tavolo alla sua lista e il cliente alla sua lista
+    //quando chiediamo il conto eliminiamo il tavolo dalla lista e il cliente dalla lista
+
+
+    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante, Menu menu) {
         this.nomeRistorante = nomeRistorante;
+        this.menu = menu;
     }
     public String getNomeRistorante() {
         return nomeRistorante;
@@ -59,8 +70,8 @@ public class Ristorante{
         System.out.println("RISTORANTE: " + getNomeRistorante() + "\n" + "SPECIALITÀ: " + EnumTipoRistorante.PESCE);
     }
      public void infoMenu(){
-         System.out.println("NOME MENU: " + menuPesce.getNomeMenu());
-         System.out.println("TIPO MENU: " + menuPesce.getTipoMenu());
+         System.out.println("NOME MENU: " + menu.getNomeMenu());
+         System.out.println("TIPO MENU: " + menu.getTipoMenu());
      }
     public void printAllTables() {
         for (Tavoli listaTavoli : tavoliList) {
