@@ -1,35 +1,37 @@
 package tableRestaurant;
 
+import client.Cliente;
+
 public class Tavoli{
+    
+    private int tableNumber;
+    private boolean available;
+    private Cliente cliente;
 
-    private final boolean isOutside;
-    private int number;
-    private int chairs;
-
-
-    public Tavoli(int number, int chairs, boolean isOutside) {
-        this.number = number;
-        this.chairs = chairs;
-        this.isOutside = isOutside;
-    }
-    public int getNumber() {
-        return number;
+    public Tavoli(int tableNumber,boolean available) {
+        this.tableNumber = tableNumber;
+        this.available = available;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+    public boolean isAvailable() {
+        return available;
+    }
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public int getChairs() {
-        return chairs;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+    public int getTableNumber() {
+        return tableNumber;
     }
 
-    public void setChairs(int chairs) {
-        this.chairs = chairs;
+    public void setTableNumber(int tableNumber) {
+        this.tableNumber = tableNumber;
     }
 
-
-    public void printAllTables() {
-        System.out.println("Numero Tavolo: " + getNumber() + " - " + "Numero sedie: " + getChairs() + " - " + "Il tavolo é fuori?: " + isOutside);
-    }
 }

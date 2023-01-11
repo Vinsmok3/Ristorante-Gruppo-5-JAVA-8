@@ -10,8 +10,11 @@ import java.util.List;
 public class Ristorante{
 
     //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù test gg
-    private final List<Cliente> clientList = new ArrayList<>();
-    private final List<Tavoli> tavoliList = new ArrayList<>();
+    private List<Cliente> clientList = new ArrayList<>();
+    private List<Tavoli> tavoliList = new ArrayList<>();
+
+
+
     private String nomeRistorante;
 
     //TODO qui ci deve essere un menù che verrà aggiunto al ristorante
@@ -20,7 +23,7 @@ public class Ristorante{
     //utilizzare anche l'enumeraro
 
     //TODO cambiare i getter e i setter
-    private Menu menu;
+    //private Menu menu;
 
     //TODO capienza ristorante inserire campo, e quindi nel metodo prenota (passeremo un cliente e un tavolo)
     //dovremmo aggiungere un tavolo alla lista tavoliList che creiamo qui solo se
@@ -30,10 +33,36 @@ public class Ristorante{
     // noi aggiugiamo il tavolo alla sua lista e il cliente alla sua lista
     //quando chiediamo il conto eliminiamo il tavolo dalla lista e il cliente dalla lista
 
+        public void bookTable(int tableNumber, Cliente customer) {
+            for (Tavoli table : tavoliList) {
+                if (table.getTableNumber() == tableNumber && table.isAvailable()) {
+                    table.setAvailable(false);
+                    table.setCliente(customer);
+                    clientList.add(customer);
+                    System.out.println("Table " + tableNumber + " has been successfully booked for " + customer.getName());
+                    return;
+                }
+            }
+            System.out.println("Table " + tableNumber + " is not available.");
+        }
 
-    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante, Menu menu) {
+    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante) {
         this.nomeRistorante = nomeRistorante;
-        this.menu = menu;
+    }
+    public List<Cliente> getClientList() {
+        return clientList;
+    }
+
+    public void setClientList(List<Cliente> clientList) {
+        this.clientList = clientList;
+    }
+
+    public List<Tavoli> getTavoliList() {
+        return tavoliList;
+    }
+
+    public void setTavoliList(List<Tavoli> tavoliList) {
+        this.tavoliList = tavoliList;
     }
     public String getNomeRistorante() {
         return nomeRistorante;
@@ -69,13 +98,13 @@ public class Ristorante{
     public void infoRistorante(){
         System.out.println("RISTORANTE: " + getNomeRistorante() + "\n" + "SPECIALITÀ: " + EnumTipoRistorante.PESCE);
     }
-     public void infoMenu(){
+     /*public void infoMenu(){
          System.out.println("NOME MENU: " + menu.getNomeMenu());
          System.out.println("TIPO MENU: " + menu.getTipoMenu());
-     }
+     }*/
     public void printAllTables() {
         for (Tavoli listaTavoli : tavoliList) {
-            listaTavoli.printAllTables();
+            System.out.println(listaTavoli.toString());
         }
 
     }

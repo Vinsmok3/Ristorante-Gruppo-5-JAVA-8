@@ -26,13 +26,13 @@ public class Start {
         Portata secondi3 = new SecondiPiatti("SECONDI: ", "Bastoncini Findus", 5, false, TypesEnum.CARNIVORO);
         Portata secondi4 = new SecondiPiatti("SECONDI: ", "Alghe fritte", 22, true, TypesEnum.VEGETARIANO);
         //DOLCI
-        Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, true, TypesEnum.VEGETARIANO);
-        Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, false, TypesEnum.CARNIVORO);
-        Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, true, TypesEnum.CARNIVORO);
+        Portata dolce1 = new Dolci("DOLCE: ", "Parfait di mandorle", 10, TypesEnum.VEGETARIANO, true);
+        Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22,TypesEnum.CARNIVORO, false);
+        Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5,TypesEnum.CARNIVORO, true);
 
         Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TypesEnum.CARNIVORO);
 
-        Tavoli tavoli1 = new Tavoli(1, 2, true);
+        Tavoli tavoli1 = new Tavoli(1, true);
 
 
         //MENU-CLASSICO
@@ -58,7 +58,7 @@ public class Start {
         ristorante.infoRistorante();
         // Bisogna creare print menu differenti in base al cliente e magari collegare tutte le liste di portata ad un grande menu creato con hashmap
 
-        ristorante.infoMenu();
+        //ristorante.infoMenu();
         System.out.println("----------CLASSICO----------");
         menuPesce.printAllMenu();
         System.out.println("----------BAMBINO----------");
