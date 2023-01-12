@@ -7,10 +7,9 @@ public class Portata {
 
     private double price;
 
-    private TypesEnum tipoPortata;
+    private TipoPortataEnum tipoPortata;
 
-    //TODO type viene eliminato e cambiamo il nome di EnumTipoPortata in tipoPortataEnum
-    public Portata(String type, String name, double price, TypesEnum tipoPortata) {
+    public Portata(String type, String name, double price, TipoPortataEnum tipoPortata) {
         this.type = type;
         this.name = name;
         this.price = price;
@@ -41,11 +40,11 @@ public class Portata {
         this.type = type;
     }
 
-    public TypesEnum getTipoPortata() {
+    public TipoPortataEnum getTipoPortata() {
         return tipoPortata;
     }
 
-    public void setTipoPortata(TypesEnum tipoPortata) {
+    public void setTipoPortata(TipoPortataEnum tipoPortata) {
         this.tipoPortata = tipoPortata;
     }
 

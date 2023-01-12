@@ -4,9 +4,9 @@ public class Bevande extends Portata {
 
     private final boolean isAlcoholic;
     private final double grades;
-    private final EnumTipoDrink tipoDrink;
+    private final TipoDrinkEnum tipoDrink;
 
-    public Bevande(String type, String name, Integer price, boolean isAlcoholic, TypesEnum tipoPortata, EnumTipoDrink tipoDrink, double grades) {
+    public Bevande(String type, String name, Integer price, boolean isAlcoholic, TipoPortataEnum tipoPortata, TipoDrinkEnum tipoDrink, double grades) {
         super(type, name, price, tipoPortata);
         this.tipoDrink = tipoDrink;
         this.isAlcoholic = isAlcoholic;
@@ -22,7 +22,7 @@ public class Bevande extends Portata {
 
     @Override
     public void printPortataDetail() {
-        if (tipoDrink == EnumTipoDrink.ANALCOLICO) {
+        if (tipoDrink == TipoDrinkEnum.ANALCOLICO) {
            System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + printAlcoholInfo() + " - Tipo drink: " + tipoDrink);
         } else {
             System.out.println(getType() + getName() + " - " + "Prezzo: " + getPrice() + " " + printAlcoholInfo() + " - Tipo drink: " + tipoDrink + " con " + grades + " gradi.");

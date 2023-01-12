@@ -34,4 +34,11 @@ public class Tavoli{
         this.tableNumber = tableNumber;
     }
 
+    public void printTableDetails(){
+        if (available){
+        System.out.println("Numero Tavolo: " + getTableNumber() + "Cliente: " + getCliente().getName() + " " + "Libero");
+    } else {
+            System.out.println("Numero Tavolo: " + getTableNumber() +" - " + "Cliente: " + getCliente().getName() + " - " + "Prenotato");
+        }
+        }
 }

@@ -5,16 +5,13 @@ import java.util.List;
 
 public class Menu {
 
-    //TODO spostare tutto da ristornate a menù come abbiamo parlato alla call
-
     private final List<Portata> listaPortata = new ArrayList<>();
-    private List<TypesEnum> type;
+    private List<TipoPortataEnum> type;
     private String nomeMenu;
-    private TipoEnum enumTipoMenu;
-    private EnumTipoDrink tipoDrink;
+    private TipoMenuEnum enumTipoMenu;
+    private TipoDrinkEnum tipoDrink;
 
-    //TODO inserire il tipo TypesEnum
-    public Menu(TipoEnum enumTipoMenu, String nomeMenu) {
+    public Menu(TipoMenuEnum enumTipoMenu, String nomeMenu) {
         this.enumTipoMenu = enumTipoMenu;
         this.nomeMenu = nomeMenu;
     }
@@ -27,19 +24,19 @@ public class Menu {
         listaPortata.remove(portata);
     }
 
-    public List<TypesEnum> getType() {
+    public List<TipoPortataEnum> getType() {
         return type;
     }
 
-    public void setType(List<TypesEnum> type) {
+    public void setType(List<TipoPortataEnum> type) {
         this.type = type;
     }
 
-    public TipoEnum getTipoMenu() {
+    public TipoMenuEnum getTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setTipoMenu(TipoEnum enumTipoMenu) {
+    public void setTipoMenu(TipoMenuEnum enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 
@@ -51,16 +48,15 @@ public class Menu {
         this.nomeMenu = nomeMenu;
     }
 
-    public TipoEnum getEnumTipoMenu() {
+    public TipoMenuEnum getEnumTipoMenu() {
         return enumTipoMenu;
     }
 
-    public void setEnumTipoMenu(TipoEnum enumTipoMenu) {
+    public void setEnumTipoMenu(TipoMenuEnum enumTipoMenu) {
         this.enumTipoMenu = enumTipoMenu;
     }
 
     //TODO la stampa del menù deve comprendere tutto
-    //rinominare
     public void printAllMenu() {
         System.out.println(getNomeMenu());
         System.out.println(getTipoMenu());

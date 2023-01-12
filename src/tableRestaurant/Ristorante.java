@@ -1,29 +1,22 @@
 package tableRestaurant;
 
 import client.Cliente;
-import menu.EnumTipoRistorante;
 import menu.Menu;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ristorante{
+public class Ristorante {
 
-    //TODO rivedere un po l'organizzazione del cleaning code, non deve estendere menu ma deve avere un oggetto menù test gg
     private List<Cliente> clientList = new ArrayList<>();
     private List<Tavoli> tavoliList = new ArrayList<>();
 
-
-
     private String nomeRistorante;
+    private String tipoRistorante;
 
-    //TODO qui ci deve essere un menù che verrà aggiunto al ristorante
 
-    //TODO possiamo fare anche un enum per il ristorante che indica il  e poi
-    //utilizzare anche l'enumeraro
 
-    //TODO cambiare i getter e i setter
-    //private Menu menu;
+    private Menu menu;
+    private int limitTables;
 
     //TODO capienza ristorante inserire campo, e quindi nel metodo prenota (passeremo un cliente e un tavolo)
     //dovremmo aggiungere un tavolo alla lista tavoliList che creiamo qui solo se
@@ -33,22 +26,25 @@ public class Ristorante{
     // noi aggiugiamo il tavolo alla sua lista e il cliente alla sua lista
     //quando chiediamo il conto eliminiamo il tavolo dalla lista e il cliente dalla lista
 
-        public void bookTable(int tableNumber, Cliente customer) {
-            for (Tavoli table : tavoliList) {
-                if (table.getTableNumber() == tableNumber && table.isAvailable()) {
-                    table.setAvailable(false);
-                    table.setCliente(customer);
-                    clientList.add(customer);
-                    System.out.println("Table " + tableNumber + " has been successfully booked for " + customer.getName());
-                    return;
-                }
-            }
-            System.out.println("Table " + tableNumber + " is not available.");
-        }
-
-    public Ristorante(String nomeRistorante, EnumTipoRistorante tipoRistorante) {
+    public Ristorante(String nomeRistorante, String tipoRistorante) {
         this.nomeRistorante = nomeRistorante;
+        this.tipoRistorante = tipoRistorante;
     }
+
+    public void bookTable(int tableNumber, Cliente customer) {
+        for (Tavoli table : tavoliList) {
+            if (table.getTableNumber() == tableNumber && table.isAvailable() && limitTables <= 40) {
+                table.setAvailable(false);
+                table.setCliente(customer);
+                clientList.add(customer);
+                addReservation();
+                System.out.println("Il Tavolo " + tableNumber + " é stato prenotato correttamente da " + customer.getName());
+                return;
+            }
+        }
+        System.out.println("Il Tavolo " + tableNumber + " é già prenotato");
+    }
+
     public List<Cliente> getClientList() {
         return clientList;
     }
@@ -64,6 +60,30 @@ public class Ristorante{
     public void setTavoliList(List<Tavoli> tavoliList) {
         this.tavoliList = tavoliList;
     }
+
+    public int getLimitTables() {
+        return limitTables;
+    }
+
+    public void setLimitTables(int limitTables) {
+        this.limitTables = limitTables;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
+    }
+    public String getTipoRistorante() {
+        return tipoRistorante;
+    }
+
+    public void setTipoRistorante(String tipoRistorante) {
+        this.tipoRistorante = tipoRistorante;
+    }
+
     public String getNomeRistorante() {
         return nomeRistorante;
     }
@@ -89,22 +109,32 @@ public class Ristorante{
         tavoliList.remove(tavoli);
     }
 
+    public void addReservation() {
+        limitTables++;
+    }
+
+    public void printLimitTableInfo() {
+        System.out.println("Tavoli Prenotati: " + limitTables + "\n" + "Limite Massimo Tavoli:40");
+    }
+
     public void printAllClients() {
         for (Cliente cliente : clientList) {
             cliente.printAllClients();
         }
     }
 
-    public void infoRistorante(){
-        System.out.println("RISTORANTE: " + getNomeRistorante() + "\n" + "SPECIALITÀ: " + EnumTipoRistorante.PESCE);
+    public void infoRistorante() {
+        System.out.println("RISTORANTE: " + getNomeRistorante() + "\n" + "SPECIALITÀ: " + getTipoRistorante());
     }
-     /*public void infoMenu(){
-         System.out.println("NOME MENU: " + menu.getNomeMenu());
-         System.out.println("TIPO MENU: " + menu.getTipoMenu());
-     }*/
-    public void printAllTables() {
+
+    public void infoMenu() {
+        System.out.println("NOME MENU: " + menu.getNomeMenu());
+        System.out.println("TIPO MENU: " + menu.getTipoMenu());
+    }
+
+    public void printReservations() {
         for (Tavoli listaTavoli : tavoliList) {
-            System.out.println(listaTavoli.toString());
+            listaTavoli.printTableDetails();
         }
 
     }

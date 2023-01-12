@@ -2,11 +2,11 @@ package menu;
 
 public class Dolci extends Portata {
 
-    //TODO perchè final
-    private boolean isHomeMade;
+
+    private final boolean isHomeMade;
 
 
-    public Dolci(String type, String name, Integer price, TypesEnum tipoPortata, boolean isHomeMade) {
+    public Dolci(String type, String name, Integer price, TipoPortataEnum tipoPortata, boolean isHomeMade) {
         super(type, name, price, tipoPortata);
         this.isHomeMade = isHomeMade;
     }

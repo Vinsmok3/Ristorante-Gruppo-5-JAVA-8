@@ -1,12 +1,12 @@
 package menu;
 
-public enum TipoEnum {
+public enum TipoMenuEnum {
     PESCE ("Menu di pesce"),
     BAMBINO ("Menu per bambini"),
     VEGETARIANO ("Menu per vegetariani");
 
     private final String description;
-    TipoEnum(String description) {
+    TipoMenuEnum(String description) {
         this.description = description;
     }
 
