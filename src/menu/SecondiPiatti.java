@@ -3,7 +3,7 @@ package menu;
 public class SecondiPiatti extends Portata {
 
 
-    private final boolean isFresh;
+    private boolean isFresh;
 
     public SecondiPiatti(String type, String name, Integer price, boolean isFresh, TipoPortataEnum tipoPortata) {
         super(type, name, price, tipoPortata);

@@ -2,8 +2,8 @@ package menu;
 
 public class Bevande extends Portata {
 
-    private final boolean isAlcoholic;
-    private final double grades;
+    private boolean isAlcoholic;
+    private double grades;
     private final TipoDrinkEnum tipoDrink;
 
     public Bevande(String type, String name, Integer price, boolean isAlcoholic, TipoPortataEnum tipoPortata, TipoDrinkEnum tipoDrink, double grades) {
