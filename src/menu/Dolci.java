@@ -3,7 +3,7 @@ package menu;
 public class Dolci extends Portata {
 
 
-    private final boolean isHomeMade;
+    private boolean isHomeMade;
 
 
     public Dolci(String type, String name, Integer price, TipoPortataEnum tipoPortata, boolean isHomeMade) {
