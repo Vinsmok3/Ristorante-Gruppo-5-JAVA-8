@@ -31,13 +31,14 @@ public class Ristorante {
         this.tipoRistorante = tipoRistorante;
     }
 
+    //TODO la capienza massima va passata al costruttore
     public void bookTable(int tableNumber, Cliente customer) {
         for (Tavoli table : tavoliList) {
             if (table.getTableNumber() == tableNumber && table.isAvailable() && limitTables <= 40) {
                 table.setAvailable(false);
                 table.setCliente(customer);
                 clientList.add(customer);
-                addReservation();
+                limitTables++;
                 System.out.println("Il Tavolo " + tableNumber + " é stato prenotato correttamente da " + customer.getName());
                 return;
             }
@@ -110,7 +111,7 @@ public class Ristorante {
     }
 
     public void addReservation() {
-        limitTables++;
+
     }
 
     public void printLimitTableInfo() {

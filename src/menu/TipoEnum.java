@@ -1,13 +1,13 @@
 package menu;
 
-public enum TipoPortataEnum {
+public enum TipoEnum {
     VEGETARIANO ("Solo per vegetariani"),
     CARNIVORO ("Solo per carnivori"),
-    VEGANO ("Solo per vegani"),
-    BEVANDA ( "Bevanda");
+
+    VEGANO ("Solo per vegani");
 
     private final String description;
-    TipoPortataEnum(String description) {
+    TipoEnum(String description) {
         this.description = description;
     }
 

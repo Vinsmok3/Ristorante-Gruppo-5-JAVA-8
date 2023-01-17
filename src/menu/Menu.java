@@ -5,8 +5,11 @@ import java.util.List;
 
 public class Menu {
 
+    //TODO perchè final?
+
+    //TODO aggiungere la somma delle portate in euro, in dollari, ecc ecc
     private final List<Portata> listaPortata = new ArrayList<>();
-    private List<TipoPortataEnum> type;
+    private List<TipoEnum> type;
     private String nomeMenu;
     private TipoMenuEnum enumTipoMenu;
     private TipoDrinkEnum tipoDrink;
@@ -24,11 +27,11 @@ public class Menu {
         listaPortata.remove(portata);
     }
 
-    public List<TipoPortataEnum> getType() {
+    public List<TipoEnum> getType() {
         return type;
     }
 
-    public void setType(List<TipoPortataEnum> type) {
+    public void setType(List<TipoEnum> type) {
         this.type = type;
     }
 

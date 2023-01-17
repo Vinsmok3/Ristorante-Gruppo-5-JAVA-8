@@ -1,15 +1,17 @@
 package client;
 
-import menu.TipoPortataEnum;
+import menu.TipoEnum;
 
 public class Cliente{
+
+    //TODO metodi di info su Cliente, una città o una email per fare la conferma prenotazione, ecc ecc
 
     private String name;
     private String surname;
     private String phoneNumber;
-    private final TipoPortataEnum tipoCliente;
+    private final TipoEnum tipoCliente;
 
-    public Cliente(String name, String surname, String phoneNumber, TipoPortataEnum tipoCliente) {
+    public Cliente(String name, String surname, String phoneNumber, TipoEnum tipoCliente) {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;

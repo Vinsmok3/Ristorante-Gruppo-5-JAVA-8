@@ -6,7 +6,7 @@ public class Bevande extends Portata {
     private double grades;
     private final TipoDrinkEnum tipoDrink;
 
-    public Bevande(String type, String name, Integer price, boolean isAlcoholic, TipoPortataEnum tipoPortata, TipoDrinkEnum tipoDrink, double grades) {
+    public Bevande(String type, String name, Integer price, boolean isAlcoholic, TipoEnum tipoPortata, TipoDrinkEnum tipoDrink, double grades) {
         super(type, name, price, tipoPortata);
         this.tipoDrink = tipoDrink;
         this.isAlcoholic = isAlcoholic;

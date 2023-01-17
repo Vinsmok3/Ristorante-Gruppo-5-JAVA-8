@@ -4,7 +4,7 @@ public class PrimiPiatti extends Portata {
 
     private boolean glutenFree;
 
-    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, TipoPortataEnum tipoPortata) {
+    public PrimiPiatti(String type, String name, Integer price, boolean glutenFree, TipoEnum tipoPortata) {
         super(type, name, price, tipoPortata);
         this.glutenFree = glutenFree;
     }
