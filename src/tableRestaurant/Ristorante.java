@@ -18,21 +18,13 @@ public class Ristorante {
     private Menu menu;
     private int limitTables;
 
-    //TODO capienza ristorante inserire campo, e quindi nel metodo prenota (passeremo un cliente e un tavolo)
-    //dovremmo aggiungere un tavolo alla lista tavoliList che creiamo qui solo se
-    // la size è ancora minore di capienza totale
-
-    //quindi useremo una lista di tavoli e una lista di clienti, su ogni prenotazione
-    // noi aggiugiamo il tavolo alla sua lista e il cliente alla sua lista
-    //quando chiediamo il conto eliminiamo il tavolo dalla lista e il cliente dalla lista
-
     public Ristorante(String nomeRistorante, String tipoRistorante) {
         this.nomeRistorante = nomeRistorante;
         this.tipoRistorante = tipoRistorante;
     }
 
     //TODO la capienza massima va passata al costruttore
-    public void bookTable(int tableNumber, Cliente customer) {
+    /*public void bookTable(int tableNumber, Cliente customer) {
         for (Tavoli table : tavoliList) {
             if (table.getTableNumber() == tableNumber && table.isAvailable() && limitTables <= 40) {
                 table.setAvailable(false);
@@ -44,6 +36,20 @@ public class Ristorante {
             }
         }
         System.out.println("Il Tavolo " + tableNumber + " é già prenotato");
+    }*/
+
+    public void bookTable(Cliente customer) {
+        for (Tavoli table : tavoliList) {
+            if (table.isAvailable() && limitTables <= 40) {
+                table.setAvailable(false);
+                table.setCliente(customer);
+                clientList.add(customer);
+                limitTables++;
+                System.out.println("Il Tavolo " + table.getTableNumber() + " é stato prenotato correttamente da " + customer.getName() + " - " + "Il Cliente ha confermato la prenotazione ? " + checkConfirmation(customer));
+                return;
+            }
+        }
+        System.out.println("Non ci sono tavoli disponibili.");
     }
 
     public List<Cliente> getClientList() {
@@ -138,6 +144,14 @@ public class Ristorante {
             listaTavoli.printTableDetails();
         }
 
+    }
+    public boolean checkConfirmation(Cliente customer) {
+        for (Tavoli table : tavoliList) {
+            if (table.getCliente() != null && table.getCliente().equals(customer) && !table.isAvailable()) {
+                return table.getCliente().getReservationConfirmed();
+            }
+        }
+        return false;
     }
 }
 

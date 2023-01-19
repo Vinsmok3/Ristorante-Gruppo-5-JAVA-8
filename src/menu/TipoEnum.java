@@ -1,10 +1,11 @@
 package menu;
 
 public enum TipoEnum {
-    VEGETARIANO ("Solo per vegetariani"),
-    CARNIVORO ("Solo per carnivori"),
+    VEGETARIANO ("VEGETARIANO"),
+    CARNIVORO ("CARNIVORO"),
 
-    VEGANO ("Solo per vegani");
+    VEGANO ("VEGANO"),
+    BEVANDA ("BEVANDA");
 
     private final String description;
     TipoEnum(String description) {

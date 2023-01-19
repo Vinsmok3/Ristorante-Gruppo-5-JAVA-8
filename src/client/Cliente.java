@@ -1,6 +1,7 @@
 package client;
 
 import menu.TipoEnum;
+import tableRestaurant.Tavoli;
 
 public class Cliente{
 
@@ -9,13 +10,33 @@ public class Cliente{
     private String name;
     private String surname;
     private String phoneNumber;
+    private String email;
+    private Boolean isReservationConfirmed;
     private final TipoEnum tipoCliente;
 
-    public Cliente(String name, String surname, String phoneNumber, TipoEnum tipoCliente) {
+    public Cliente(String name, String surname, String phoneNumber, TipoEnum tipoCliente, String email, Boolean isReservationConfirmed) {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
         this.tipoCliente = tipoCliente;
+        this.email = email;
+        this.isReservationConfirmed = isReservationConfirmed;
+    }
+
+    public Boolean getReservationConfirmed() {
+        return isReservationConfirmed;
+    }
+
+    public void setReservationConfirmed(Boolean reservationConfirmed) {
+        isReservationConfirmed = reservationConfirmed;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getName() {
@@ -44,6 +65,7 @@ public class Cliente{
 
 
     public void printAllClients() {
-        System.out.println("Nome: " + getName() + " - " + "Cognome: " + getSurname() + " - " + "Numero di telefono: " + getPhoneNumber());
+        System.out.println("Nome: " + getName() + " - " + "Cognome: " + getSurname() + " - " + "Numero di telefono: " + getPhoneNumber() + " - " + tipoCliente.getDescription() + " - " + "Email: " + getEmail());
     }
+
 }

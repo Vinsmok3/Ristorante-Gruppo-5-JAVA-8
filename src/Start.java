@@ -30,9 +30,12 @@ public class Start {
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, TipoEnum.CARNIVORO, false);
         Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, TipoEnum.CARNIVORO, true);
 
-        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoEnum.CARNIVORO);
+        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoEnum.CARNIVORO, "paulcannon22@gmail.com", true);
+        Cliente cliente2 = new Cliente("Teresa", "Top", "+ 39 3954383342", TipoEnum.VEGANO, "teresatop33@gmail.com", false);
 
         Tavoli tavoli1 = new Tavoli(1, true);
+        Tavoli tavoli2 = new Tavoli(2, true);
+
 
 
         //MENU-CLASSICO
@@ -67,13 +70,17 @@ public class Start {
         menuVegetariano.printAllMenu();
         System.out.println("----------LISTA CLIENTI----------");
         ristorante.addClient(cliente1);
+        ristorante.addClient(cliente2);
         ristorante.printAllClients();
         System.out.println("----------PRENOTAZIONI----------");
         ristorante.addTavoli(tavoli1);
+        ristorante.addTavoli(tavoli2);
 
-        //TODO fare un metodo che passa il primo tavolo libero
-        ristorante.bookTable(1,cliente1);
+        ristorante.bookTable(cliente1);
+        ristorante.bookTable(cliente2);
         ristorante.printLimitTableInfo();
         ristorante.printReservations();
+        //System.out.println(ristorante.checkConfirmation(cliente1));
+        //System.out.println(ristorante.checkConfirmation(cliente2));
     }
 }

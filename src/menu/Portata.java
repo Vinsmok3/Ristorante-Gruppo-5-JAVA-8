@@ -48,7 +48,6 @@ public class Portata {
         this.tipoPortata = tipoPortata;
     }
 
-    //TODO modificare gli altri metodi
     public void printPortataDetail() {
         System.out.println("Tipo :" + " " + type + " - " + "Nome: " + name + " - " + "Prezzo: " + price+ " - Tipo portata: "+ tipoPortata.getDescription());
     }

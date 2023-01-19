@@ -5,8 +5,6 @@ import java.util.List;
 
 public class Menu {
 
-    //TODO perchè final?
-
     //TODO aggiungere la somma delle portate in euro, in dollari, ecc ecc
     private final List<Portata> listaPortata = new ArrayList<>();
     private List<TipoEnum> type;
@@ -59,7 +57,6 @@ public class Menu {
         this.enumTipoMenu = enumTipoMenu;
     }
 
-    //TODO la stampa del menù deve comprendere tutto
     public void printAllMenu() {
         System.out.println(getNomeMenu());
         System.out.println(getTipoMenu());
