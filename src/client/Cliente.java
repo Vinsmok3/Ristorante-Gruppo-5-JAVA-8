@@ -12,9 +12,9 @@ public class Cliente{
     private String phoneNumber;
     private String email;
     private Boolean isReservationConfirmed;
-    private final TipoEnum tipoCliente;
+    private final TipoClienteEnum tipoCliente;
 
-    public Cliente(String name, String surname, String phoneNumber, TipoEnum tipoCliente, String email, Boolean isReservationConfirmed) {
+    public Cliente(String name, String surname, String phoneNumber, TipoClienteEnum tipoCliente, String email, Boolean isReservationConfirmed) {
         this.name = name;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
