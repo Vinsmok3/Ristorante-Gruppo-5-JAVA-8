@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Update Enum Cliente.">
-      <change afterPath="$PROJECT_DIR$/src/StartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/MenuItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ristorante-Gruppo-5-JAVA-8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ristorante-Gruppo-5-JAVA-8.iml" afterDir="false" />
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Initial DB Integration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/MenuItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PortataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/TipoMenuEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/TipoMenuEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/crist/Documents/Develhope/TeamProject/lib/mysql-connector-j-8.0.32.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/crist/Documents/Develhope/TeamProject/lib/mysql-connector-j-8.0.32.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674122286548</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial DB Integration.">
+      <created>1674750801429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674750801429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +164,7 @@
     <MESSAGE value="Author: Emiliano&#10;fix: printPortataDetails now working as intendend." />
     <MESSAGE value="Refactoring and cleaning code." />
     <MESSAGE value="Prenotation &amp; Refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Prenotation &amp; Refactoring." />
+    <MESSAGE value="Initial DB Integration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial DB Integration." />
   </component>
 </project>

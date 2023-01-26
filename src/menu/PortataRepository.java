@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MenuItemRepository {
+public class PortataRepository {
 
-    private final String url = "jdbc:mysql://localhost:3306/mydb";
+    private final String url = "jdbc:mysql://localhost:3306/ristorantedb";
     private final String user = "root";
     private final String password = "password";
 
@@ -16,7 +16,7 @@ public class MenuItemRepository {
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         String queryPortata = ""
-                + "CREATE TABLE IF NOT EXISTS `mydb`.`Portata` ( "
+                + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Portata` ( "
                 + "  `idPortata` INT NOT NULL AUTO_INCREMENT, "
                 + "  `Name` VARCHAR(45) NOT NULL, "
                 + "  `Description` VARCHAR(45) NOT NULL, "
@@ -27,7 +27,7 @@ public class MenuItemRepository {
                 + " "
                 + " "
                 + "-- ----------------------------------------------------- "
-                + "-- Table `mydb`.`Menu` "
+                + "-- Table `ristorantedb`.`Menu` "
                 + "-- -----------------------------------------------------";
         statement.executeUpdate(queryPortata);
         connection.close();
@@ -36,7 +36,7 @@ public class MenuItemRepository {
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         String insertPortata = " "
-                + " INSERT INTO mydb.Portata"
+                + " INSERT INTO ristorantedb.Portata"
                 + " (Name, Description, Price, Tipo)"
                 + "VALUES('"+portata.getName()+"','"+portata.getType()+"',"+portata.getPrice()+","+portata.getTipoPortata()+")";
         statement.executeUpdate(insertPortata);

@@ -31,7 +31,7 @@ String varname14 = ""
 + "-- Table `mydb`.`Portata` "
 + "-- -----------------------------------------------------";
 
-
+//DONE
 String varname15 = ""
 + "CREATE TABLE IF NOT EXISTS `mydb`.`Portata` ( "
 + "  `idPortata` INT NOT NULL AUTO_INCREMENT, "
@@ -47,7 +47,7 @@ String varname15 = ""
 + "-- Table `mydb`.`Menu` "
 + "-- -----------------------------------------------------";
 
-
+//DONE
 String varname16 = ""
 + "CREATE TABLE IF NOT EXISTS `mydb`.`Menu` ( "
 + "  `idMenu` INT NOT NULL AUTO_INCREMENT, "

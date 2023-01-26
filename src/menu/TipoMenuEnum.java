@@ -3,7 +3,9 @@ package menu;
 public enum TipoMenuEnum {
     PESCE ("Menu di pesce"),
     BAMBINO ("Menu per bambini"),
-    VEGETARIANO ("Menu per vegetariani");
+    VEGETARIANO ("Menu per vegetariani"),
+    CLASSICO ("Menu per vegetariani");
+
 
     private final String description;
     TipoMenuEnum(String description) {
