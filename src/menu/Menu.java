@@ -31,13 +31,7 @@ public class Menu {
                 + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Menu` ( "
                 + "  `idMenu` INT NOT NULL AUTO_INCREMENT, "
                 + "  `MenuType` ENUM('CARNIVORO', 'VEGETARIANO', 'VEGANO') NOT NULL, "
-                + "  PRIMARY KEY (`idMenu`)) "
-                + "ENGINE = InnoDB; "
-                + " "
-                + " "
-                + "-- ----------------------------------------------------- "
-                + "-- Table `ristorantedb`.`Cliente` "
-                + "-- -----------------------------------------------------";
+                + "  PRIMARY KEY (`idMenu`)) ";
         statement.executeUpdate(queryCreateMenu);
         connection.close();
     }

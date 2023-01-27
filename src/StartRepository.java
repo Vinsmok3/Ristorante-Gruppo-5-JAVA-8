@@ -1,12 +1,6 @@
 import menu.*;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
-
-import static menu.TipoEnum.CARNIVORO;
-import static menu.TipoEnum.VEGETARIANO;
 
 public class StartRepository {
     public static void main(String[] args) throws SQLException {
@@ -30,7 +24,12 @@ public class StartRepository {
         Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, TipoEnum.CARNIVORO, true);
 
         PortataRepository portata = new PortataRepository();
+        MenuRepository menuRepository = new MenuRepository();
+        Menu menu = new Menu(TipoMenuEnum.CLASSICO, "SIUM");
+        menu.createMenu();
         portata.createMenuPortata();
-        portata.insertMenuPortata(bevanda1);
+        portata.insertMenuPortata(bevanda2);
+        menuRepository.createMenuPortata();
+
     }
 }

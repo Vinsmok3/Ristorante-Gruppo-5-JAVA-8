@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Initial DB Integration.">
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Added MenuDB and created DB.">
+      <change afterPath="$PROJECT_DIR$/src/client/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tableRestaurant/PrenotazioneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tableRestaurant/TavoliRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MenuItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PortataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/TipoMenuEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/TipoMenuEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/PortataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PortataRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674750801429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added MenuDB and created DB.">
+      <created>1674757208153</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674757208153</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +175,7 @@
     <MESSAGE value="Refactoring and cleaning code." />
     <MESSAGE value="Prenotation &amp; Refactoring." />
     <MESSAGE value="Initial DB Integration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial DB Integration." />
+    <MESSAGE value="Added MenuDB and created DB." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MenuDB and created DB." />
   </component>
 </project>
