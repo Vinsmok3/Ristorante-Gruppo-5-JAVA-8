@@ -22,13 +22,7 @@ public class PortataRepository {
                 + "  `Description` VARCHAR(45) NOT NULL, "
                 + "  `Price` DECIMAL NOT NULL, "
                 + "  `Tipo` ENUM('PRIMO', 'SECONDO', 'DOLCE', 'BEVANDA') NOT NULL, "
-                + "  PRIMARY KEY (`idPortata`)) "
-                + "ENGINE = InnoDB; "
-                + " "
-                + " "
-                + "-- ----------------------------------------------------- "
-                + "-- Table `ristorantedb`.`Menu` "
-                + "-- -----------------------------------------------------";
+                + "  PRIMARY KEY (`idPortata`)) ";
         statement.executeUpdate(queryPortata);
         connection.close();
     }
@@ -37,9 +31,13 @@ public class PortataRepository {
         Statement statement = connection.createStatement();
         String insertPortata = " "
                 + " INSERT INTO ristorantedb.Portata"
-                + " (Name, Description, Price, Tipo)"
-                + "VALUES('"+portata.getName()+"','"+portata.getType()+"',"+portata.getPrice()+","+portata.getTipoPortata()+")";
+                + " (Name, Type, Price, Tipo)"
+                + "VALUES('"+portata.getName()+"','"+portata.getType()+"','"+portata.getPrice()+"','"+portata.getTipoPortata()+"');";
         statement.executeUpdate(insertPortata);
         connection.close();
     }
+
+
 }
+
+
