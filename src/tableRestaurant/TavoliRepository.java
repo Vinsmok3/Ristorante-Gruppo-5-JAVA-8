@@ -24,9 +24,14 @@ public class TavoliRepository {
     public void insertTavolo(Tavoli tavolo) throws SQLException{
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
-        String checkTavolo = "SELECT * FROM ristorantedb.Tavolo WHERE TableNumber='"+tavolo.getTableNumber()+"';";
+        String checkTavolo = "SELECT * FROM ristorantedb.Tavolo WHERE TableNumber='"
+                +tavolo.getTableNumber()+"';";
         ResultSet rs = statement.executeQuery(checkTavolo);
-        if(!rs.next()){String insertTavolo = "INSERT INTO ristorantedb.Tavolo (TableNumber, Available, Client) VALUES ('"+tavolo.getTableNumber()+"','"+ (tavolo.isAvailable() ? 1 : 0) +"','"+tavolo.getCliente().getName()+"');";
+        if(!rs.next()){String insertTavolo = "INSERT INTO ristorantedb.Tavolo " +
+                "(TableNumber, Available, Client) " +
+                "VALUES ('"+tavolo.getTableNumber()+"','"
+                + (tavolo.isAvailable() ? 1 : 0) +"','"
+                +tavolo.getCliente().getName()+"');";
             statement.executeUpdate(insertTavolo);
             connection.close();
             statement.close();

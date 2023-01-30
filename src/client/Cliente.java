@@ -1,11 +1,6 @@
 package client;
 
-import menu.TipoEnum;
-import tableRestaurant.Tavoli;
-
 public class Cliente{
-
-    //TODO metodi di info su Cliente, una città o una email per fare la conferma prenotazione, ecc ecc
 
     private String name;
     private String surname;
