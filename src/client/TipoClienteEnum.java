@@ -2,7 +2,7 @@ package client;
 
 public enum TipoClienteEnum {
     VEGETARIANO ("VEGETARIANO"),
-    CARNIVORO ("CARNIVORO"),
+    CLASSICO("CLASSICO"),
 
     VEGANO ("VEGANO");
 

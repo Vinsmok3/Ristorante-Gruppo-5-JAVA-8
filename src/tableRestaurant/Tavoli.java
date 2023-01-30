@@ -8,10 +8,9 @@ public class Tavoli{
     private boolean available;
     private Cliente cliente;
 
-    public Tavoli(int tableNumber,boolean available, Cliente cliente) {
+    public Tavoli(int tableNumber,boolean available) {
         this.tableNumber = tableNumber;
         this.available = available;
-        this.cliente = cliente;
     }
 
     public void setAvailable(boolean available) {

@@ -27,9 +27,14 @@ public class PortataRepository {
     public void insertMenuPortata(Portata portata) throws SQLException{
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
-        String checkPortata = "SELECT * FROM ristorantedb.Portata WHERE Name='"+portata.getName()+"';";
+        String checkPortata = "SELECT * FROM ristorantedb.Portata WHERE Name='"
+                +portata.getName()+"';";
         ResultSet rs = statement.executeQuery(checkPortata);
-        if(!rs.next()){String insertPortata = "INSERT INTO ristorantedb.Portata (Name, Description, Price, Tipo) VALUES ('"+portata.getName()+"','"+portata.getType()+"','"+portata.getPrice()+"','"+portata.getTipoPortata()+"');";
+        if(!rs.next()){String insertPortata = "INSERT INTO ristorantedb.Portata (Name, Description, Price, Tipo) VALUES ('"
+                +portata.getName()+"','"
+                +portata.getType()+"','"
+                +portata.getPrice()+"','"
+                +portata.getTipoPortata()+"');";
         statement.executeUpdate(insertPortata);
         connection.close();
         statement.close();

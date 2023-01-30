@@ -2,18 +2,24 @@ package tableRestaurant;
 
 import client.Cliente;
 import menu.Menu;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ristorante {
+    private final String url = "jdbc:mysql://localhost:3306/";
+    private final String user = "root";
+    private final String password = "password";
 
     private List<Cliente> clientList = new ArrayList<>();
     private List<Tavoli> tavoliList = new ArrayList<>();
 
     private String nomeRistorante;
     private String tipoRistorante;
-
-
 
     private Menu menu;
     private int limitTables;
@@ -50,6 +56,14 @@ public class Ristorante {
             }
         }
         System.out.println("Non ci sono tavoli disponibili.");
+    }
+    public void createDB() throws SQLException {
+
+        Connection connection = DriverManager.getConnection(url, user, password);
+        Statement statement = connection.createStatement();
+        statement.executeUpdate("CREATE DATABASE IF NOT EXISTS ristorantedb");
+        statement.close();
+        connection.close();
     }
 
     public List<Cliente> getClientList() {

@@ -1,9 +1,8 @@
 package tableRestaurant;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import client.Cliente;
+
+import java.sql.*;
 
 public class PrenotazioneRepository {
     private final String url = "jdbc:mysql://localhost:3306/ristorantedb";
@@ -16,7 +15,7 @@ public class PrenotazioneRepository {
         String queryPrenotazione = ""
                 + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Prenotazione` ( "
                 + "  `idPrenotazione` INT NOT NULL AUTO_INCREMENT, "
-                + "  `Time` DATETIME NOT NULL, "
+                + "  `Time` INT NOT NULL, "
                 + "  `Cliente_id_Cliente` INT NOT NULL, "
                 + "  `Tavolo_idTavolo` INT NOT NULL, "
                 + "  PRIMARY KEY (`idPrenotazione`), "
@@ -37,21 +36,34 @@ public class PrenotazioneRepository {
         connection.close();
     }
 
-    /*public void insertPrenotazione(Prenotazione Prenotazione) throws SQLException {
+    public void insertPrenotazione(Prenotazione prenotazione, Cliente cliente,Tavoli tavoli) throws SQLException {
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
-        String checkPrenotaizone = "SELECT * FROM ristorantedb.Prenotazione WHERE Name='" + Prenotazione.getIdTavolo() + "';";
-        ResultSet rs = statement.executeQuery(checkPrenotaizone);
+
+        String queryIDCliente = "SELECT id_Cliente FROM ristorantedb.Cliente WHERE Surname = '" + cliente.getSurname() + "';";
+        ResultSet rsCliente = statement.executeQuery(queryIDCliente);
+        int clientId = 0;
+        if (rsCliente.next()) {
+            clientId = rsCliente.getInt("id_Cliente");
+        }
+        String queryIDTavolo = "SELECT idTavolo FROM ristorantedb.Tavolo WHERE TableNumber = '" + tavoli.getTableNumber() + "';";
+        ResultSet rsTavolo = statement.executeQuery(queryIDTavolo);
+        int tableId = 0;
+        if (rsTavolo.next()) {
+            tableId = rsTavolo.getInt("idTavolo");
+        }
+        String checkPrenotazione = "SELECT * FROM ristorantedb.Prenotazione WHERE Tavolo_idTavolo = '" + tableId + "' AND Time = '" + prenotazione.getTime() + "';";        //ResultSet rs = statement.executeQuery(checkPrenotazione);
+        ResultSet rs = statement.executeQuery(checkPrenotazione);
         if (!rs.next()) {
-            String insertPrenotazione = "INSERT INTO ristorantedb.Prenotazione (Name, Description, Price, Tipo) "
-                    + "VALUES ('" + portata.getName() + "','"
-                    + portata.getType() + "','"
-                    + portata.getPrice() + "','"
-                    + portata.getTipoPortata() + "');";
-            statement.executeUpdate(insertPortata);
+            String insertPrenotazione = "INSERT INTO ristorantedb.Prenotazione " +
+                    "(Time, Cliente_id_Cliente, Tavolo_idTavolo) "
+                    + "VALUES ('" + prenotazione.getTime()  + "','"
+                    + clientId + "','"
+                    + tableId + "');";
+            statement.executeUpdate(insertPrenotazione);
             connection.close();
             statement.close();
             rs.close();
         }
-    }*/
+    }
 }

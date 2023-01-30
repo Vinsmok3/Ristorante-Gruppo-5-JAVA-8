@@ -1,16 +1,12 @@
 package tableRestaurant;
 
-import client.Cliente;
-
 public class Prenotazione {
     private int time;
-    private Cliente surname;
-    private Tavoli idTavolo;
 
-    public Prenotazione(int time, Cliente surname, Cliente phoneNumber, Tavoli idTavolo) {
+
+    public Prenotazione(int time) {
         this.time = time;
-        this.surname = surname;
-        this.idTavolo = idTavolo;
+
     }
 
     public int getTime() {
@@ -21,20 +17,5 @@ public class Prenotazione {
         this.time = time;
     }
 
-    public Cliente getSurname() {
-        return surname;
-    }
 
-    public void setSurname(Cliente surname) {
-        this.surname = surname;
-    }
-
-
-    public Tavoli getIdTavolo() {
-        return idTavolo;
-    }
-
-    public void setIdTavolo(Tavoli idTavolo) {
-        this.idTavolo = idTavolo;
-    }
 }

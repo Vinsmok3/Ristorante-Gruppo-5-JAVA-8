@@ -1,5 +1,7 @@
 package client;
 
+import menu.Menu;
+
 import java.sql.*;
 
 public class ClienteRepository {
@@ -19,7 +21,7 @@ public class ClienteRepository {
                 + " `Phone_Number` VARCHAR (45) NOT NULL, "
                 + " `Email` VARCHAR (45) NOT NULL, "
                 + " `Is_Reservation_Confirmed` TINYINT(1) NOT NULL, "
-                + " `Tipo_Cliente` ENUM('CARNIVORO', 'VEGETARIANO', 'VEGANO') NOT NULL, "
+                + " `Tipo_Cliente` ENUM('CLASSICO', 'VEGETARIANO', 'VEGANO') NOT NULL, "
                 + " `Menu_idMenu` INT NOT NULL DEFAULT 0, "
                 + "  PRIMARY KEY (`id_Cliente`), "
                 + "  INDEX `fk_Cliente_Menu1_idx` (`Menu_idMenu` ASC) VISIBLE, "
@@ -34,20 +36,22 @@ public class ClienteRepository {
         connection.close();
     }
 
-    public void insertCliente(Cliente cliente) throws SQLException {
+    public void insertCliente(Cliente cliente, Menu menu) throws SQLException {
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         String checkCliente = "SELECT * FROM ristorantedb.Cliente WHERE Surname='" +
                 cliente.getSurname() + "';";
         ResultSet rs = statement.executeQuery(checkCliente);
         if (!rs.next()) {
-            String insertCliente = "INSERT INTO ristorantedb.Cliente " +
-                    "(Surname,Name, Phone_Number, Email, Is_Reservation_Confirmed) " +
-                    "VALUES ('" + cliente.getSurname() + "','"
-                    + cliente.getName() + "','"
+            String insertCliente = "INSERT INTO ristorantedb.Cliente "
+                    + "(Name, Surname, Phone_Number, Tipo_Cliente, Email, Is_Reservation_Confirmed, Menu_idMenu) "
+                    + "VALUES ('" + cliente.getName() + "','"
+                    + cliente.getSurname() + "','"
                     + cliente.getPhoneNumber() + "', '"
-                    + cliente.getEmail() + "', '"
-                    + (cliente.getReservationConfirmed() ? 1 : 0) + "');";
+                    + cliente.getTipoCliente() + "', '"
+                    + cliente.getEmail()+ "', '"
+                    + (cliente.getReservationConfirmed() ? 1 : 0) + "', '"
+                    + menu.getIdMenu() +"');";
             statement.executeUpdate(insertCliente);
             connection.close();
             statement.close();

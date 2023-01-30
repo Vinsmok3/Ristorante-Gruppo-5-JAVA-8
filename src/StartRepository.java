@@ -2,9 +2,7 @@ import client.Cliente;
 import client.ClienteRepository;
 import client.TipoClienteEnum;
 import menu.*;
-import tableRestaurant.PrenotazioneRepository;
-import tableRestaurant.Tavoli;
-import tableRestaurant.TavoliRepository;
+import tableRestaurant.*;
 
 import java.sql.SQLException;
 
@@ -29,29 +27,37 @@ public class StartRepository {
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, TipoEnum.CARNIVORO, false);
         Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, TipoEnum.CARNIVORO, true);
 
-        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CARNIVORO, "paulcannon22@gmail.com", true);
+        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CLASSICO, "paulcannon22@gmail.com", true);
         Cliente cliente2 = new Cliente("Teresa", "Top", "+ 39 3954383342", TipoClienteEnum.VEGANO, "teresatop33@gmail.com", false);
 
-        Tavoli tavoli1 = new Tavoli(1, true, cliente1);
-        Tavoli tavoli2 = new Tavoli(2, true, cliente2);
+        Tavoli tavoli1 = new Tavoli(1, true);
+        Tavoli tavoli2 = new Tavoli(2, true);
 
-
+        Ristorante ristorante = new Ristorante("Ammutta Mudica","Pesce");
         PortataRepository portata = new PortataRepository();
         MenuRepository menuRepository = new MenuRepository();
-        Menu menu = new Menu(TipoMenuEnum.CLASSICO, "SIUM");
-        menu.createMenu();
+        Menu menuClassico = new Menu(TipoMenuEnum.CLASSICO, 1);
+        ClienteRepository clienteRepository = new ClienteRepository();
+        Prenotazione prenotazione1 = new Prenotazione(19);
+        PrenotazioneRepository prenotazioneRepository = new PrenotazioneRepository();
+        TavoliRepository tavolo  = new TavoliRepository();
+
+        ristorante.createDB();
+        menuRepository.createMenu();
+        menuRepository.insertMenu(menuClassico);
+
         portata.createMenuPortata();
         portata.insertMenuPortata(bevanda2);
+
         menuRepository.createMenuPortata();
-        TavoliRepository tavolo  = new TavoliRepository();
+
         tavolo.createTavolo();
         tavolo.insertTavolo(tavoli1);
 
-        ClienteRepository clienteRepository = new ClienteRepository();
         clienteRepository.createCliente();
-        clienteRepository.insertCliente(cliente1);
+        clienteRepository.insertCliente(cliente1,menuClassico);
 
-        PrenotazioneRepository prenotazioneRepository = new PrenotazioneRepository();
         prenotazioneRepository.createPrenotazione();
+        prenotazioneRepository.insertPrenotazione(prenotazione1,cliente1,tavoli1);
     }
 }

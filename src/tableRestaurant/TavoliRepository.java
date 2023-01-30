@@ -16,7 +16,6 @@ public class TavoliRepository {
                 + "  `idTavolo` INT NOT NULL AUTO_INCREMENT, "
                 + "  `TableNumber` INT (45) NOT NULL , "
                 + "  `Available` TINYINT(1) NOT NULL, "
-                + "  `Client` VARCHAR (65) NOT NULL, "
                 + "  PRIMARY KEY (`idTavolo`)) ";
         statement.executeUpdate(queryTavolo);
         connection.close();
@@ -28,10 +27,9 @@ public class TavoliRepository {
                 +tavolo.getTableNumber()+"';";
         ResultSet rs = statement.executeQuery(checkTavolo);
         if(!rs.next()){String insertTavolo = "INSERT INTO ristorantedb.Tavolo " +
-                "(TableNumber, Available, Client) " +
+                "(TableNumber, Available) " +
                 "VALUES ('"+tavolo.getTableNumber()+"','"
-                + (tavolo.isAvailable() ? 1 : 0) +"','"
-                +tavolo.getCliente().getName()+"');";
+                + (tavolo.isAvailable() ? 1 : 0) +"');";
             statement.executeUpdate(insertTavolo);
             connection.close();
             statement.close();

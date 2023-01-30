@@ -81,20 +81,3 @@ String queryCliente = ""
 + "    ON UPDATE NO ACTION) "
 
 
-
-CREATE TABLE IF NOT EXISTS `mydb`.`Cliente` (
-  `idCliente` INT NOT NULL AUTO_INCREMENT,
-  `Name` VARCHAR(45) NOT NULL,
-  `Surname` VARCHAR(45) NOT NULL,
-  `PhoneNumber` VARCHAR(45) NOT NULL,
-  `Email` VARCHAR(45) NOT NULL,
-  `ClientType` ENUM('CARNIVORO', 'VEGANO', 'VEGETARIANO') NOT NULL,
-  `Menu_idMenu` INT NOT NULL,
-  PRIMARY KEY (`idCliente`),
-  INDEX `fk_Cliente_Menu1_idx` (`Menu_idMenu` ASC) VISIBLE,
-  CONSTRAINT `fk_Cliente_Menu1`
-    FOREIGN KEY (`Menu_idMenu`)
-    REFERENCES `mydb`.`Menu` (`idMenu`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB

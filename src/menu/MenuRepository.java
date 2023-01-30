@@ -1,9 +1,6 @@
 package menu;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class MenuRepository {
     private final String url = "jdbc:mysql://localhost:3306/ristorantedb";
@@ -32,5 +29,32 @@ public class MenuRepository {
                 + "    ON UPDATE NO ACTION) ";
         statement.executeUpdate(queryMenu);
         statement.close();
+    }
+    public void createMenu() throws SQLException{
+        Connection connection = DriverManager.getConnection(url, user, password);
+        Statement statement = connection.createStatement();
+        String queryCreateMenu = ""
+                + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Menu` ( "
+                + "  `idMenu` INT NOT NULL AUTO_INCREMENT, "
+                + "  `MenuType` ENUM('CLASSICO', 'VEGETARIANO', 'VEGANO') NOT NULL, "
+                + "  PRIMARY KEY (`idMenu`)) ";
+        statement.executeUpdate(queryCreateMenu);
+        connection.close();
+    }
+    public void insertMenu(Menu menu) throws SQLException {
+        Connection connection = DriverManager.getConnection(url, user, password);
+        Statement statement = connection.createStatement();
+        String checkMenu = "SELECT * FROM ristorantedb.Menu WHERE MenuType='" +
+                menu.getEnumTipoMenu() + "';";
+        ResultSet rs = statement.executeQuery(checkMenu);
+        if (!rs.next()) {
+            String insertMenu = "INSERT INTO ristorantedb.Menu "
+                    + "(MenuType) "
+                    + "VALUES ('" + menu.getEnumTipoMenu() +"');";
+            statement.executeUpdate(insertMenu);
+            connection.close();
+            statement.close();
+            rs.close();
+        }
     }
 }

@@ -6,9 +6,9 @@ import tableRestaurant.Tavoli;
 
 public class Start {
     public static void main(String[] args) {
-        Menu menuPesce = new Menu(TipoMenuEnum.PESCE,"CLASSIC");
-        Menu menuBambino = new Menu(TipoMenuEnum.BAMBINO,"CHILD");
-        Menu menuVegetariano = new Menu(TipoMenuEnum.VEGETARIANO,"VEGGY");
+        Menu menuPesce = new Menu(TipoMenuEnum.PESCE,1);
+        Menu menuBambino = new Menu(TipoMenuEnum.BAMBINO,2);
+        Menu menuVegetariano = new Menu(TipoMenuEnum.VEGETARIANO,3);
 
 
         Ristorante ristorante = new Ristorante("Ammutta Muddica", "Pesce");
@@ -31,11 +31,11 @@ public class Start {
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, TipoEnum.CARNIVORO, false);
         Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, TipoEnum.CARNIVORO, true);
 
-        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CARNIVORO, "paulcannon22@gmail.com", true);
+        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CLASSICO, "paulcannon22@gmail.com", true);
         Cliente cliente2 = new Cliente("Teresa", "Top", "+ 39 3954383342", TipoClienteEnum.VEGANO, "teresatop33@gmail.com", false);
 
-        Tavoli tavoli1 = new Tavoli(1, true, cliente1);
-        Tavoli tavoli2 = new Tavoli(2, true, cliente2);
+        Tavoli tavoli1 = new Tavoli(1, true);
+        Tavoli tavoli2 = new Tavoli(2, true);
 
 
 

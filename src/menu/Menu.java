@@ -1,9 +1,5 @@
 package menu;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,27 +9,26 @@ public class Menu {
     private final List<Portata> listaPortata = new ArrayList<>();
     private List<TipoEnum> type;
     private String nomeMenu;
+    private int idMenu;
     private TipoMenuEnum enumTipoMenu;
     private TipoDrinkEnum tipoDrink;
     private final String url = "jdbc:mysql://localhost:3306/ristorantedb";
     private final String user = "root";
     private final String password = "password";
 
-    public Menu(TipoMenuEnum enumTipoMenu, String nomeMenu) {
+    public Menu(TipoMenuEnum enumTipoMenu, int idMenu) {
         this.enumTipoMenu = enumTipoMenu;
-        this.nomeMenu = nomeMenu;
+        this.idMenu = idMenu;
     }
 
-    public void createMenu() throws SQLException{
-        Connection connection = DriverManager.getConnection(url, user, password);
-        Statement statement = connection.createStatement();
-        String queryCreateMenu = ""
-                + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Menu` ( "
-                + "  `idMenu` INT NOT NULL AUTO_INCREMENT, "
-                + "  `MenuType` ENUM('CARNIVORO', 'VEGETARIANO', 'VEGANO') NOT NULL, "
-                + "  PRIMARY KEY (`idMenu`)) ";
-        statement.executeUpdate(queryCreateMenu);
-        connection.close();
+
+
+    public int getIdMenu() {
+        return idMenu;
+    }
+
+    public void setIdMenu(int idMenu) {
+        this.idMenu = idMenu;
     }
 
     public void addPortata(Portata portata) {

@@ -58,6 +58,9 @@ public class Cliente{
         this.phoneNumber = phoneNumber;
     }
 
+    public TipoClienteEnum getTipoCliente() {
+        return tipoCliente;
+    }
 
     public void printAllClients() {
         System.out.println("Nome: " + getName() + " - " + "Cognome: " + getSurname() + " - " + "Numero di telefono: " + getPhoneNumber() + " - " + tipoCliente.getDescription() + " - " + "Email: " + getEmail());
