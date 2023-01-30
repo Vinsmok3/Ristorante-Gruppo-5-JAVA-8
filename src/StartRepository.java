@@ -1,4 +1,8 @@
+import client.Cliente;
+import client.TipoClienteEnum;
 import menu.*;
+import tableRestaurant.Tavoli;
+import tableRestaurant.TavoliRepository;
 
 import java.sql.SQLException;
 
@@ -23,6 +27,13 @@ public class StartRepository {
         Portata dolce2 = new Dolci("DOLCE: ", "Tiramisù", 22, TipoEnum.CARNIVORO, false);
         Portata dolce3 = new Dolci("DOLCE: ", "Gelato Artigianale", 5, TipoEnum.CARNIVORO, true);
 
+        Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CARNIVORO, "paulcannon22@gmail.com", true);
+        Cliente cliente2 = new Cliente("Teresa", "Top", "+ 39 3954383342", TipoClienteEnum.VEGANO, "teresatop33@gmail.com", false);
+
+        Tavoli tavoli1 = new Tavoli(1, true);
+        Tavoli tavoli2 = new Tavoli(2, true);
+
+
         PortataRepository portata = new PortataRepository();
         MenuRepository menuRepository = new MenuRepository();
         Menu menu = new Menu(TipoMenuEnum.CLASSICO, "SIUM");
@@ -30,6 +41,8 @@ public class StartRepository {
         portata.createMenuPortata();
         portata.insertMenuPortata(bevanda2);
         menuRepository.createMenuPortata();
-
+        TavoliRepository tavolo  = new TavoliRepository();
+        tavolo.createTavolo();
+        tavolo.insertTavolo(tavoli1);
     }
 }
