@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Added MenuDB and created DB.">
-      <change afterPath="$PROJECT_DIR$/src/client/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/MenuRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tableRestaurant/PrenotazioneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tableRestaurant/TavoliRepository.java" afterDir="false" />
+    <list default="true" id="5919d56c-acbb-4a4c-84c8-e65a43a3a4f1" name="Changes" comment="Added PortataRepository and Refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ristorante-Gruppo-5-JAVA-8/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/PortataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/PortataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tableRestaurant/Tavoli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tableRestaurant/Tavoli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tableRestaurant/TavoliRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tableRestaurant/TavoliRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674757208153</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added PortataRepository and Refactoring.">
+      <created>1674839278247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674839278247</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +180,7 @@
     <MESSAGE value="Prenotation &amp; Refactoring." />
     <MESSAGE value="Initial DB Integration." />
     <MESSAGE value="Added MenuDB and created DB." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MenuDB and created DB." />
+    <MESSAGE value="Added PortataRepository and Refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PortataRepository and Refactoring." />
   </component>
 </project>

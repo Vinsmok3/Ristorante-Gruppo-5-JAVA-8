@@ -1,7 +1,5 @@
 package tableRestaurant;
 
-import menu.Portata;
-
 import java.sql.*;
 
 public class TavoliRepository {
@@ -17,7 +15,7 @@ public class TavoliRepository {
                 + "CREATE TABLE IF NOT EXISTS `ristorantedb`.`Tavolo` ( "
                 + "  `idTavolo` INT NOT NULL AUTO_INCREMENT, "
                 + "  `TableNumber` INT (45) NOT NULL , "
-                + "  `Available` BIT NOT NULL, "
+                + "  `Available` TINYINT(1) NOT NULL, "
                 + "  `Client` VARCHAR (65) NOT NULL, "
                 + "  PRIMARY KEY (`idTavolo`)) ";
         statement.executeUpdate(queryTavolo);
@@ -26,9 +24,9 @@ public class TavoliRepository {
     public void insertTavolo(Tavoli tavolo) throws SQLException{
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
-        String checkTavolo = "SELECT * FROM ristorantedb.Portata WHERE TableNumber='"+tavolo.getTableNumber()+"';";
+        String checkTavolo = "SELECT * FROM ristorantedb.Tavolo WHERE TableNumber='"+tavolo.getTableNumber()+"';";
         ResultSet rs = statement.executeQuery(checkTavolo);
-        if(!rs.next()){String insertTavolo = "INSERT INTO ristorantedb.Tavolo (TableNumber, Available, Client) VALUES ('"+tavolo.getTableNumber()+"','"+tavolo.isAvailable()+"','"+tavolo.getCliente()+"');";
+        if(!rs.next()){String insertTavolo = "INSERT INTO ristorantedb.Tavolo (TableNumber, Available, Client) VALUES ('"+tavolo.getTableNumber()+"','"+ (tavolo.isAvailable() ? 1 : 0) +"','"+tavolo.getCliente().getName()+"');";
             statement.executeUpdate(insertTavolo);
             connection.close();
             statement.close();

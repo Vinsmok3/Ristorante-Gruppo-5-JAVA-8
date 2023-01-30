@@ -30,8 +30,8 @@ public class StartRepository {
         Cliente cliente1 = new Cliente("Paul", "Cannon", "+ 39 3960382722", TipoClienteEnum.CARNIVORO, "paulcannon22@gmail.com", true);
         Cliente cliente2 = new Cliente("Teresa", "Top", "+ 39 3954383342", TipoClienteEnum.VEGANO, "teresatop33@gmail.com", false);
 
-        Tavoli tavoli1 = new Tavoli(1, true);
-        Tavoli tavoli2 = new Tavoli(2, true);
+        Tavoli tavoli1 = new Tavoli(1, true, cliente1);
+        Tavoli tavoli2 = new Tavoli(2, true, cliente2);
 
 
         PortataRepository portata = new PortataRepository();
