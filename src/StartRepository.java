@@ -1,4 +1,5 @@
 import client.Cliente;
+import client.ClienteRepository;
 import client.TipoClienteEnum;
 import menu.*;
 import tableRestaurant.Tavoli;
@@ -44,5 +45,8 @@ public class StartRepository {
         TavoliRepository tavolo  = new TavoliRepository();
         tavolo.createTavolo();
         tavolo.insertTavolo(tavoli1);
+        ClienteRepository clienteRepository = new ClienteRepository();
+        clienteRepository.createCliente();
+        clienteRepository.insertCliente(cliente1);
     }
 }
